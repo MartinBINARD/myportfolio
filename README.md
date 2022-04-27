@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #2**
+**Main branch - Commit #3**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add index.html, sass, css & image folders.
+* Add app.js and sections animations.
 
 ## License
 

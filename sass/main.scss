@@ -1,5 +1,9 @@
 // BASE
-@import "base/reset.scss";
-@import "base/typography";
+@use "base/reset.scss";
+@use "base/typography";
 // UTILS
-@import "utils/variables";
+@use "utils/variables";
+// LAYOUT
+@use "layout/header";
+@use "layout/sections";
+@use "layout/controls";
