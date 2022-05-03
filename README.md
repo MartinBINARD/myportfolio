@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #3**
+**Main branch - Commit #4**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add app.js and sections animations.
+* Add header content.
 
 ## License
 

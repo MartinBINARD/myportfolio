@@ -8,9 +8,9 @@ section {
 }
 
 .section {
-  background-color: var(--color-primary);
   transform: translateY(-100%) scale(0);
   transition: all 0.3s ease-in-out;
+  background-color: var(--color-primary);
 }
 
 .sec1,
@@ -19,10 +19,6 @@ section {
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-}
-
-.sec1 {
-  background-color: red;
 }
 
 .sec2 {
