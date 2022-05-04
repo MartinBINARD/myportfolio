@@ -4,7 +4,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 15rem;
 }
 
 .section {
@@ -19,18 +19,6 @@ section {
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-}
-
-.sec2 {
-  background-color: steelblue;
-}
-
-.sec3 {
-  background-color: beige;
-}
-
-.sec4 {
-  background-color: orange;
 }
 
 .active {
