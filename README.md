@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #5**
+**Main branch - Commit #6**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add About me content.
+* Add Portfolio and Contact content.
 
 ## License
 
