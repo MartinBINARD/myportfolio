@@ -1,0 +1,17 @@
+@media screen and(max-width: 1440px) {
+  .right-header {
+    padding-right: 7rem !important;
+  }
+}
+
+@media screen and(max-width: 1024px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    .h-shape {
+      display: none;
+    }
+    .right-header {
+      grid-row: 1;
+    }
+  }
+}

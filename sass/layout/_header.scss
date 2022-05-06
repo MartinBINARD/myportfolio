@@ -25,6 +25,7 @@
       background-color: var(--color-black);
       transition: all 0.3s ease-in-out;
       img {
+        border-radius: var(--br-sm-2);
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -41,7 +42,8 @@
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
-    .name, p {
+    .name,
+    p {
       span {
         color: var(--color-secondary);
       }
@@ -80,18 +82,18 @@
       content: "";
       position: absolute;
       top: 0;
+      bottom: 0;
+      left: 0;
       right: 0;
-      transform: translateX(100%);
-      transition: all 0.3s ease-out;
+      background-color: var(--color-secondary);
       z-index: -1;
+      transition: transform 0.3s ease-in-out;
+      transform: scaleX(0);
+      transform-origin: right;
     }
-    &:hover {
-      &::before {
-        height: 100%;
-        width: 100%;
-        background-color: var(--color-secondary);
-        transform: translateX(0);
-      }
+    &:hover::before,
+    &:focus::before {
+      transform: scaleX(1);
     }
   }
 }
