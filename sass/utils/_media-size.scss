@@ -1,17 +1,112 @@
-@media screen and(max-width: 1440px) {
-  .right-header {
-    padding-right: 7rem !important;
+@media screen and(max-width: 600px) {
+  .section {
+    padding: 2.5rem 1.5rem;
   }
-}
-
-@media screen and(max-width: 1024px) {
+  .main-title {
+    h2 {
+      font-size: 2rem;
+      .bg-text {
+        font-size: 2.5rem;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
   .header-content {
     grid-template-columns: 1fr;
     .h-shape {
       display: none;
     }
+    .left-header {
+      display: flex;
+      align-items: flex-start;
+      .image {
+        margin-top: 2rem;
+      }
+    }
     .right-header {
       grid-row: 1;
+      padding-right: 0;
+      width: 90%;
+      margin: 0 auto;
+      .name {
+        font-size: 2.2rem;
+      }
     }
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    .right-about {
+      grid-template-columns: 1fr;
+    }
+    .left-about {
+      padding-right: 0;
+      p {
+        padding: 1.5rem 0;
+      }
+    }
+    .right-about {
+      gap: 2rem;
+      .skills-item {
+        padding: 1rem;
+      }
+    }
+  }
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding: 0 0 4rem 0;
+    gap: 2rem;
+  }
+  .contact-content {
+    flex-direction: column;
+    .right-contact {
+      margin-left: 0;
+      margin-top: 2.5rem;
+    }
+  }
+  .contact-content .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+  .contact-content .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .contact-content .right-contact {
+    margin-bottom: 6rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    margin: 1rem 0;
+    p {
+      font-size: 15px;
+      color: var(--color-grey-2);
+    }
+    span {
+      font-size: 15px;
+    }
+    .icon {
+      grid-template-columns: 25px 1fr;
+    }
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
+    .control {
+      margin: 1rem 0.3rem;
+    }
+  }
+  .theme-btn {
+    width: 40px;
+    height: 40px;
+    top: 2%;
   }
 }
