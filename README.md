@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #8**
+**Main branch - Commit #9**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add all media queries of every sections and add resume.
+* Add intermediate media queries.
 
 ## License
 

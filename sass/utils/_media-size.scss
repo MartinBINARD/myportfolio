@@ -1,35 +1,10 @@
-@media screen and(max-width: 600px) {
-  .section {
-    padding: 2.5rem 1.5rem;
-  }
+@media screen and(max-width: 768px) {
   .main-title {
     h2 {
       font-size: 2rem;
       .bg-text {
         font-size: 2.5rem;
         transform: translate(-50%, -50%);
-      }
-    }
-  }
-  .header-content {
-    grid-template-columns: 1fr;
-    .h-shape {
-      display: none;
-    }
-    .left-header {
-      display: flex;
-      align-items: flex-start;
-      .image {
-        margin-top: 2rem;
-      }
-    }
-    .right-header {
-      grid-row: 1;
-      padding-right: 0;
-      width: 90%;
-      margin: 0 auto;
-      .name {
-        font-size: 2.2rem;
       }
     }
   }
@@ -77,7 +52,6 @@
   }
 
   .contact-item {
-    flex-direction: column;
     margin: 1rem 0;
     p {
       font-size: 15px;
@@ -88,6 +62,34 @@
     }
     .icon {
       grid-template-columns: 25px 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  section {
+    padding: 2.5rem 1.5rem;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    .h-shape {
+      display: none;
+    }
+    .left-header {
+      display: flex;
+      align-items: flex-start;
+      .image {
+        margin-top: 2rem;
+      }
+    }
+    .right-header {
+      grid-row: 1;
+      width: 90%;
+      padding-right: 0;
+      margin: 0 auto;
+      .name {
+        font-size: 2.2rem;
+      }
     }
   }
   .controls {
@@ -108,5 +110,39 @@
     width: 40px;
     height: 40px;
     top: 2%;
+  }
+}
+
+@media screen and (min-width: 711px) and (max-width:1024px){
+  .header-content {
+    .right-header {
+      padding-right: 5rem;
+    }
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1409px) {
+  .about-container {
+    .right-about {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  section {
+    padding: 3rem 7rem;
+  }
+}
+
+@media screen and (min-width: 1409px) and (max-width: 1903px) {
+  .about-container {
+    .right-about {
+      gap: 3rem;
+      .skills-item {
+        padding: 1rem;
+      }
+    }
   }
 }
