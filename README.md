@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #9**
+**Main branch - Commit #10**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add intermediate media queries.
+* Simplify javascript function and modify media queries.
 
 ## License
 
