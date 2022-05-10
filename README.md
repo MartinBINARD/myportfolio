@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #10**
+**Main branch - Commit #11**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Simplify javascript function and modify media queries.
+* Add favicon.
 
 ## License
 
