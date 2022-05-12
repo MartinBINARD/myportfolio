@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #11**
+**Main branch - Commit #12**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add favicon.
+* Add secondary color to h4 span in section.
 
 ## License
 
