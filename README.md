@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #12**
+**Main branch - Commit #13**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add secondary color to h4 span in section.
+* Add language selector and compress pictures.
 
 ## License
 

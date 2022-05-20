@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martin BINARD - Portfolio</title>
-    <link rel="icon" href="img/logo-martin-binard.png">
+    <link rel="icon" href="img/logo-martin-binard.png" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/lang.js" defer></script>
     <script src="./js/app.js" defer></script>
   </head>
   <body class="main-content">
@@ -240,7 +241,10 @@
             </div>
             <div class="hover-item">
               <h4>Secure Social Network</h4>
-              <p>Groupomania, a private social network using VueJS 3, nodeJS, express, MySQL & Sequelize...</p>
+              <p>
+                Groupomania, a private social network using VueJS 3, nodeJS,
+                express, MySQL & Sequelize...
+              </p>
               <div class="icons">
                 <a
                   class="icon-link"
@@ -268,7 +272,9 @@
             </div>
             <div class="hover-item">
               <h4>REST API with NodeJS</h4>
-              <p>Using CRUD operations for a gastronomic review application...</p>
+              <p>
+                Using CRUD operations for a gastronomic review application...
+              </p>
               <div class="icons">
                 <a
                   class="icon-link"
@@ -289,7 +295,10 @@
             </div>
             <div class="hover-item">
               <h4>E-commerce website in Javascript</h4>
-              <p>The customer can select different items and add it to its cart...</p>
+              <p>
+                The customer can select different items and add it to its
+                cart...
+              </p>
               <div class="icons">
                 <a
                   class="icon-link"
@@ -317,8 +326,10 @@
             </div>
             <div class="hover-item">
               <h4>A french booking menu website</h4>
-              <p>A mobile-first website with transition effects and load
-                spinner with CSS & SASS...</p>
+              <p>
+                A mobile-first website with transition effects and load spinner
+                with CSS & SASS...
+              </p>
               <div class="icons">
                 <a
                   class="icon-link"
@@ -440,6 +451,43 @@
 
     <aside class="theme-btn">
       <i class="fas fa-adjust"></i>
+    </aside>
+
+    <aside class="lang-menu">
+      <div class="lang-selected">
+        <div class="img-selected active-lang" id="english">
+          <img src="./img/flag/american.png" alt="english language" />
+        </div>
+        <div class="img-selected" id="french">
+          <img src="./img/flag/french.png" alt="langue française" />
+        </div>
+        <svg
+          fill="#f1f1f1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="Layer_1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 407.437 407.437"
+          style="enable-background: new 0 0 407.437 407.437"
+          xml:space="preserve"
+        >
+          <polygon
+            points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
+          />
+        </svg>
+      </div>
+      <div class="bloc-links">
+        <ul>
+          <li class="lang active-item-lang" data-id="english">
+            <img src="./img/flag/american.png" alt="english language" />
+          </li>
+          <li class="lang" data-id="french">
+            <img src="./img/flag/french.png" alt="langue française" />
+          </li>
+        </ul>
+      </div>
     </aside>
   </body>
 </html>
