@@ -1,3 +1,8 @@
+@media screen and (max-width: 380px) {
+  .main-title {
+    margin-top: 2.5rem;
+  }
+}
 @media screen and(max-width: 768px) {
   section {
     padding: 2.5rem 6rem;
@@ -70,6 +75,7 @@
   }
   .header-content {
     grid-template-columns: 1fr;
+    margin-top: 0.5rem;
     .h-shape {
       display: none;
     }
@@ -110,6 +116,10 @@
     height: 40px;
     top: 2%;
   }
+  .lang-menu {
+    top: 2.4%;
+    right: 78%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -126,7 +136,7 @@
   }
 }
 
-@media screen and (min-width: 711px) and (max-width:1024px){
+@media screen and (min-width: 711px) and (max-width: 1024px) {
   .header-content {
     .right-header {
       padding-right: 5rem;
