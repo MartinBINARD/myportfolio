@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #15**
+**Main branch - Commit #16**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add french selection in localStorage and french content in 1st section.
+* Add french content in the entire site.
 
 ## License
 
