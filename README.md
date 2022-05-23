@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #16**
+**Main branch - Commit #17**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-* Add french content in the entire site.
+* Add new social icons background-color.
 
 ## License
 
