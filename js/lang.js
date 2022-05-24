@@ -84,11 +84,27 @@ const language = {
     sendMessageButton: "Envoyer le message"
   },
 };
+// check if already visited and selected to a specific language
+// No need to reload English content if french has never been selected.
+// No subdomain for french content.
+if (localStorage.getItem("selectedLanguage") === "french") {
+  document.getElementById("english").classList.remove("active-lang");
+  document.getElementById("french").classList.add("active-lang");
+  localStorage.setItem("selectedLanguage", "french");
+  setFrenchContent();
+} else if (localStorage.getItem("selectedLanguage") === "english") {
+  document.getElementById("french").classList.remove("active-lang");
+  document.getElementById("english").classList.add("active-lang");
+  localStorage.setItem("selectedLanguage", "english");
+  setEnglishContent();
+} else {
+  console.log("No language selected !");
+}
 // open and close dropdown menu
 document.querySelector(".lang-selected").addEventListener("click", toggleLangDropDown);
 // close dropdown when language is selected
 document.querySelectorAll(".lang").forEach((li) => li.addEventListener("click", toggleLangDropDown));
-// select language
+// select language and load content
 document.querySelectorAll(".lang").forEach((li) =>
   li.addEventListener("click", function () {
     document
@@ -99,13 +115,15 @@ document.querySelectorAll(".lang").forEach((li) =>
     document.querySelector(".active-lang").classList.remove("active-lang");
     document.getElementById(li.dataset.id).classList.add("active-lang");
     // display country selected in localstorage
-    if (li.dataset.id == "french") {
+    if (li.dataset.id === "french") {
       localStorage.setItem("selectedLanguage", "french");
-    } else {
+      setFrenchContent();
+    } else if(li.dataset.id === "english") {
       localStorage.setItem("selectedLanguage", "english");
+      setEnglishContent();
+    } else {
+      console.log("No language selected !");
     }
-    // display language content
-    setLanguageContent();
   })
 );
 
@@ -120,88 +138,87 @@ function toggleLangDropDown() {
     toggleLang = false;
   }
 }
-// display language content
-function setLanguageContent() {
-  if (localStorage.getItem("selectedLanguage") == "french") {
-    console.log("in french please !");
-    document.getElementById("name-part1").textContent = language.fr.nameLeft;
-    document.getElementById("name-part2").textContent = language.fr.nameRight;
-    document.getElementById("my-description-part1").textContent = language.fr.myDescriptionLeft;
-    document.getElementById("my-description-part2").textContent = language.fr.myDescriptionRight;
-    document.getElementById("download").textContent = language.fr.download;
-    document.getElementById("about-left").textContent = language.fr.aboutLeft;
-    document.getElementById("about-right").textContent = language.fr.aboutRight;
-    document.getElementById("about-background").textContent = language.fr.aboutBackground;
-    document.getElementById("about-subtitle-left").textContent = language.fr.aboutSubtitleLeft;
-    document.getElementById("about-subtitle-right").textContent = language.fr.aboutSubtitleRight;
-    document.getElementById("about-description").textContent = language.fr.aboutDescription;
-    document.getElementById("frontend-title").textContent = language.fr.frontendTitle;
-    document.getElementById("frontend-description").textContent = language.fr.frontendDescription;
-    document.getElementById("backend-description").textContent = language.fr.backendDescription;
-    document.getElementById("linux-title").textContent = language.fr.linuxTitle;
-    document.getElementById("linux-description").textContent = language.fr.linuxDescription;
-    document.getElementById("portfolio-title-left").textContent = language.fr.portfolioTitleLeft;
-    document.getElementById("portfolio-title-background").textContent = language.fr.portfolioTitleBackground;
-    document.getElementById("groupomania-title").textContent = language.fr.groupomaniaTitle;
-    document.getElementById("groupomania-description").textContent = language.fr.groupomaniaDescription;
-    document.getElementById("api-title").textContent = language.fr.apiTitle;
-    document.getElementById("api-description").textContent = language.fr.apiDescription;
-    document.getElementById("orinoco-title").textContent = language.fr.orinocoTitle;
-    document.getElementById("orinoco-description").textContent = language.fr.orinocoDescription;
-    document.getElementById("ohmyfood-title").textContent = language.fr.ohMyFoodTitle;
-    document.getElementById("ohmyfood-description").textContent = language.fr.ohMyFoodDescription;
-    document.getElementById("contact-title-left").textContent = language.fr.contactTitleLeft;
-    document.getElementById("contact-title-right").textContent = language.fr.contactTitleRight;
-    document.getElementById("contact-title-background").textContent = language.fr.contactTitleBackground;
-    document.getElementById("contact-subtitle-left").textContent = language.fr.contactSubtitleLeft
-    document.getElementById("contact-subtitle-right").textContent = language.fr.contactSubtitleRight;
-    document.getElementById("contact-description").textContent = language.fr.contactSubtitleDescription;
-    document.getElementById("language-title").textContent = language.fr.languageTitle;
-    document.getElementById("language-description").textContent = language.fr.languageDescription;
-    document.getElementsByName("email")[0].placeholder = language.fr.insertYourEmail;
-    document.getElementsByName("title")[0].placeholder = language.fr.insertYourTitle;
-    document.getElementsByName("message")[0].placeholder = language.fr.insertYourMessage;
-    document.getElementById("send-message-btn").textContent = language.fr.sendMessageButton;
-
-  } else if (localStorage.getItem("selectedLanguage") == "english") {
-    console.log("in english please !");
-    document.getElementById("name-part1").textContent = language.eng.nameLeft;
-    document.getElementById("name-part2").textContent = language.eng.nameRight;
-    document.getElementById("my-description-part1").textContent = language.eng.myDescriptionLeft;
-    document.getElementById("my-description-part2").textContent = language.eng.myDescriptionRight;
-    document.getElementById("download").textContent = language.eng.download;
-    document.getElementById("about-left").textContent = language.eng.aboutLeft;
-    document.getElementById("about-right").textContent = language.eng.aboutRight;
-    document.getElementById("about-background").textContent = language.eng.aboutBackground;
-    document.getElementById("about-subtitle-right").textContent = language.eng.aboutSubtitleLeft;
-    document.getElementById("about-subtitle-right").textContent = language.eng.aboutSubtitleRight;
-    document.getElementById("about-description").textContent = language.fr.aboutDescription;
-    document.getElementById("frontend-title").textContent = language.eng.frontendTitle;
-    document.getElementById("frontend-description").textContent = language.eng.frontendDescription;
-    document.getElementById("backend-description").textContent = language.eng.backendDescription;
-    document.getElementById("linux-title").textContent = language.eng.linuxTitle;
-    document.getElementById("linux-description").textContent = language.eng.linuxDescription;
-    document.getElementById("portfolio-title-left").textContent = language.eng.portfolioTitleLeft;
-    document.getElementById("portfolio-title-background").textContent = language.eng.portfolioTitleBackground;
-    document.getElementById("groupomania-title").textContent = language.eng.groupomaniaTitle;
-    document.getElementById("groupomania-description").textContent = language.eng.groupomaniaDescription;
-    document.getElementById("api-title").textContent = language.eng.apiTitle;
-    document.getElementById("api-description").textContent = language.eng.apiDescription;
-    document.getElementById("orinoco-title").textContent = language.eng.orinocoTitle;
-    document.getElementById("orinoco-description").textContent = language.eng.orinocoDescription;
-    document.getElementById("ohmyfood-title").textContent = language.eng.ohMyFoodTitle;
-    document.getElementById("ohmyfood-description").textContent = language.eng.ohMyFoodDescription;
-    document.getElementById("contact-title-left").textContent = language.eng.contactTitleLeft;
-    document.getElementById("contact-title-right").textContent = language.eng.contactTitleRight;
-    document.getElementById("contact-title-background").textContent = language.eng.contactTitleBackground;
-    document.getElementById("contact-subtitle-left").textContent = language.eng.contactSubtitleLeft
-    document.getElementById("language-title").textContent = language.eng.languageTitle;
-    document.getElementById("language-description").textContent = language.eng.languageDescription;
-    document.getElementsByName("email")[0].placeholder = language.eng.insertYourEmail;
-    document.getElementsByName("title")[0].placeholder = language.eng.insertYourTitle;
-    document.getElementsByName("message")[0].placeholder = language.eng.insertYourMessage;
-    document.getElementById("send-message-btn").textContent = language.eng.sendMessageButton;
-  } else {
-    console.log("No language selected !");
-  }
+// display french content
+function setFrenchContent() {
+  console.log("In french, please !");
+  document.getElementById("name-part1").textContent = language.fr.nameLeft;
+  document.getElementById("name-part2").textContent = language.fr.nameRight;
+  document.getElementById("my-description-part1").textContent = language.fr.myDescriptionLeft;
+  document.getElementById("my-description-part2").textContent = language.fr.myDescriptionRight;
+  document.getElementById("download").textContent = language.fr.download;
+  document.getElementById("about-left").textContent = language.fr.aboutLeft;
+  document.getElementById("about-right").textContent = language.fr.aboutRight;
+  document.getElementById("about-background").textContent = language.fr.aboutBackground;
+  document.getElementById("about-subtitle-left").textContent = language.fr.aboutSubtitleLeft;
+  document.getElementById("about-subtitle-right").textContent = language.fr.aboutSubtitleRight;
+  document.getElementById("about-description").textContent = language.fr.aboutDescription;
+  document.getElementById("frontend-title").textContent = language.fr.frontendTitle;
+  document.getElementById("frontend-description").textContent = language.fr.frontendDescription;
+  document.getElementById("backend-description").textContent = language.fr.backendDescription;
+  document.getElementById("linux-title").textContent = language.fr.linuxTitle;
+  document.getElementById("linux-description").textContent = language.fr.linuxDescription;
+  document.getElementById("portfolio-title-left").textContent = language.fr.portfolioTitleLeft;
+  document.getElementById("portfolio-title-background").textContent = language.fr.portfolioTitleBackground;
+  document.getElementById("groupomania-title").textContent = language.fr.groupomaniaTitle;
+  document.getElementById("groupomania-description").textContent = language.fr.groupomaniaDescription;
+  document.getElementById("api-title").textContent = language.fr.apiTitle;
+  document.getElementById("api-description").textContent = language.fr.apiDescription;
+  document.getElementById("orinoco-title").textContent = language.fr.orinocoTitle;
+  document.getElementById("orinoco-description").textContent = language.fr.orinocoDescription;
+  document.getElementById("ohmyfood-title").textContent = language.fr.ohMyFoodTitle;
+  document.getElementById("ohmyfood-description").textContent = language.fr.ohMyFoodDescription;
+  document.getElementById("contact-title-left").textContent = language.fr.contactTitleLeft;
+  document.getElementById("contact-title-right").textContent = language.fr.contactTitleRight;
+  document.getElementById("contact-title-background").textContent = language.fr.contactTitleBackground;
+  document.getElementById("contact-subtitle-left").textContent = language.fr.contactSubtitleLeft
+  document.getElementById("contact-subtitle-right").textContent = language.fr.contactSubtitleRight;
+  document.getElementById("contact-description").textContent = language.fr.contactSubtitleDescription;
+  document.getElementById("language-title").textContent = language.fr.languageTitle;
+  document.getElementById("language-description").textContent = language.fr.languageDescription;
+  document.getElementsByName("email")[0].placeholder = language.fr.insertYourEmail;
+  document.getElementsByName("title")[0].placeholder = language.fr.insertYourTitle;
+  document.getElementsByName("message")[0].placeholder = language.fr.insertYourMessage;
+  document.getElementById("send-message-btn").textContent = language.fr.sendMessageButton;
+}
+// display english content
+function setEnglishContent() {
+  console.log("In english, please !");
+  document.getElementById("name-part1").textContent = language.eng.nameLeft;
+  document.getElementById("name-part2").textContent = language.eng.nameRight;
+  document.getElementById("my-description-part1").textContent = language.eng.myDescriptionLeft;
+  document.getElementById("my-description-part2").textContent = language.eng.myDescriptionRight;
+  document.getElementById("download").textContent = language.eng.download;
+  document.getElementById("about-left").textContent = language.eng.aboutLeft;
+  document.getElementById("about-right").textContent = language.eng.aboutRight;
+  document.getElementById("about-background").textContent = language.eng.aboutBackground;
+  document.getElementById("about-subtitle-right").textContent = language.eng.aboutSubtitleLeft;
+  document.getElementById("about-subtitle-right").textContent = language.eng.aboutSubtitleRight;
+  document.getElementById("about-description").textContent = language.eng.aboutDescription;
+  document.getElementById("frontend-title").textContent = language.eng.frontendTitle;
+  document.getElementById("frontend-description").textContent = language.eng.frontendDescription;
+  document.getElementById("backend-description").textContent = language.eng.backendDescription;
+  document.getElementById("linux-title").textContent = language.eng.linuxTitle;
+  document.getElementById("linux-description").textContent = language.eng.linuxDescription;
+  document.getElementById("portfolio-title-left").textContent = language.eng.portfolioTitleLeft;
+  document.getElementById("portfolio-title-background").textContent = language.eng.portfolioTitleBackground;
+  document.getElementById("groupomania-title").textContent = language.eng.groupomaniaTitle;
+  document.getElementById("groupomania-description").textContent = language.eng.groupomaniaDescription;
+  document.getElementById("api-title").textContent = language.eng.apiTitle;
+  document.getElementById("api-description").textContent = language.eng.apiDescription;
+  document.getElementById("orinoco-title").textContent = language.eng.orinocoTitle;
+  document.getElementById("orinoco-description").textContent = language.eng.orinocoDescription;
+  document.getElementById("ohmyfood-title").textContent = language.eng.ohMyFoodTitle;
+  document.getElementById("ohmyfood-description").textContent = language.eng.ohMyFoodDescription;
+  document.getElementById("contact-title-left").textContent = language.eng.contactTitleLeft;
+  document.getElementById("contact-title-right").textContent = language.eng.contactTitleRight;
+  document.getElementById("contact-title-background").textContent = language.eng.contactTitleBackground;
+  document.getElementById("contact-subtitle-left").textContent = language.eng.contactSubtitleLeft
+  document.getElementById("contact-subtitle-right").textContent = language.eng.contactSubtitleRight;
+  document.getElementById("contact-description").textContent = language.eng.contactSubtitleDescription;
+  document.getElementById("language-title").textContent = language.eng.languageTitle;
+  document.getElementById("language-description").textContent = language.eng.languageDescription;
+  document.getElementsByName("email")[0].placeholder = language.eng.insertYourEmail;
+  document.getElementsByName("title")[0].placeholder = language.eng.insertYourTitle;
+  document.getElementsByName("message")[0].placeholder = language.eng.insertYourMessage;
+  document.getElementById("send-message-btn").textContent = language.eng.sendMessageButton;
 }

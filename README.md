@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #17**
+**Main branch - Commit #18**
 
 ## Website link
 
@@ -9,11 +9,12 @@
 ## Description
 
 * This is a portfolio made with vanilla JS that uses the KISS principle :raised_hands:.
+* No subdomain for french content and english content is already set in HTML for SEO. This why english content is not loaded by default.
 * It will be soon hosted.
 
 ## Change done
 
-* Add new social icons background-color.
+* Add persistence to light theme and language content selected.
 
 ## License
 
