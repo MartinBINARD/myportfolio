@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #18**
+**Main branch - Commit #19**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-* Add persistence to light theme and language content selected.
+* Modify content and remove console.log.
 
 ## License
 

@@ -12,12 +12,12 @@ const language = {
     aboutBackground: "about me",
     aboutSubtitleLeft: "informations",
     aboutSubtitleRight: " about me",
-    aboutDescription: "After created my last project, a social private network using VueJS, NodeJS, Sequelize and MySQL. I would like to improve my skills in VueJs and learn more about TDD.",
+    aboutDescription: "After created my last project, a social private network using VueJS, NodeJS, Sequelize and MySQL. I would like to bring my expertise in VueJs and deepen my skills in TDD.",
     frontendTitle: "Frontend VueJS, Javascript framework, HTML, CSS, SASS",
     frontendDescription: "I'm able to create reactive and dymanic applications with Javascript framework such as VueJS or simple reponsive web pages with HTML, CSS, SASS and vanilla Javascript.",
     backendDescription: "if you need to develop a REST API, i master the framework NodeJS, Express server communicating with MongoDB or MySQL database through Sequelize library.",
     linuxTitle: "Linux environments, Arch linux, Debian",
-    linuxDescription: "I'm familiar with UNIX commands and use an Arch-based distribution on my daily computer.",
+    linuxDescription: "I'm familiar with UNIX commands and use a Linux Arch-based distribution on my daily computer.",
     portfolioTitleLeft: "My ",
     portfolioTitleBackground: "my portfolio",
     groupomaniaTitle: "Secure Social Network",
@@ -54,12 +54,12 @@ const language = {
     aboutBackground: "A propos de moi",
     aboutSubtitleLeft: "informations",
     aboutSubtitleRight: " me concernant",
-    aboutDescription: "Après avoir créé mon dernier projet, un réseau social privé utilisant VueJS, NodeJS, Sequelize et MySQL. J'aimerais améliorer mes compétences en VueJs et en savoir plus sur le TDD.",
+    aboutDescription: "Après avoir créé mon dernier projet, un réseau social privé utilisant VueJS, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et approfondir mes compétences en TDD.",
     frontendTitle: "Frontend VueJS, framework Javascript, HTML, CSS, SASS",
     frontendDescription: "Je suis capable de créer des applications réactives et dynamiques avec un framework Javascript tel que VueJS ou de simples pages web réactives avec HTML, CSS, SASS et Javascript natif.",
     backendDescription: "Si vous avez besoin de développer une API REST, je maîtrise le framework NodeJS, serveur Express communiquant avec la base de données MongoDB ou MySQL via la librairie Sequelize.",
     linuxTitle: "Environnements Linux, Arch linux, Debian",
-    linuxDescription: "Je connais les commandes UNIX et j'utilise quotidiennement une distribution basée sur Arch sur mon ordinateur.",
+    linuxDescription: "Je connais les commandes UNIX et j'utilise quotidiennement une distribution basée sur Arch Linux sur mon ordinateur.",
     portfolioTitleLeft: "Mon ",
     portfolioTitleBackground: "mon portfolio",
     groupomaniaTitle: "Réseau social sécurisé",
@@ -122,7 +122,7 @@ document.querySelectorAll(".lang").forEach((li) =>
       localStorage.setItem("selectedLanguage", "english");
       setEnglishContent();
     } else {
-      console.log("No language selected !");
+      return false;
     }
   })
 );
@@ -140,7 +140,6 @@ function toggleLangDropDown() {
 }
 // display french content
 function setFrenchContent() {
-  console.log("In french, please !");
   document.getElementById("name-part1").textContent = language.fr.nameLeft;
   document.getElementById("name-part2").textContent = language.fr.nameRight;
   document.getElementById("my-description-part1").textContent = language.fr.myDescriptionLeft;
@@ -182,7 +181,6 @@ function setFrenchContent() {
 }
 // display english content
 function setEnglishContent() {
-  console.log("In english, please !");
   document.getElementById("name-part1").textContent = language.eng.nameLeft;
   document.getElementById("name-part2").textContent = language.eng.nameRight;
   document.getElementById("my-description-part1").textContent = language.eng.myDescriptionLeft;
