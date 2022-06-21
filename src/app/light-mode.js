@@ -1,13 +1,4 @@
-(function () {
-  // select section with control buttons
-  [...document.querySelectorAll(".control")].forEach((button) => {
-    button.addEventListener("click", function () {
-      document.querySelector(".active-btn").classList.remove("active-btn");
-      this.classList.add("active-btn");
-      document.querySelector(".active").classList.remove("active");
-      document.getElementById(button.dataset.id).classList.add("active");
-    });
-  });
+export function toggleLightMode() {
   let lightMode = localStorage.getItem("lightMode");
   // check if already visited and selected to light mode
   if (lightMode === "enable") {
@@ -25,4 +16,4 @@
       localStorage.setItem("lightMode", null);
     }
   });
-})();
+}

@@ -1,20 +1,20 @@
 # My portfolio
 
-**Main branch - Commit #19**
+**Main branch - Commit #20**
 
 ## Website link
 
-* :construction: Not, yet ! Work in progress...
+- :construction: Not, yet ! Work in progress...
 
 ## Description
 
-* This is a portfolio made with vanilla JS that uses the KISS principle :raised_hands:.
-* No subdomain for french content and english content is already set in HTML for SEO. This why english content is not loaded by default.
-* It will be soon hosted.
+- This is a portfolio made with vanilla JS that uses the KISS principle :raised_hands:.
+- No subdomain for french content and english content is already set in HTML for SEO. This why english content is not loaded by default.
+- It will be soon hosted.
 
 ## Change done
 
-* Modify content and remove console.log.
+- Add webpack, babel & french resume.
 
 ## License
 
