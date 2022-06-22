@@ -106,66 +106,66 @@ export function toggleLanguage() {
 
   // display french content
   function setFrenchContent() {
-    document.getElementById("name-part1").textContent = language.fr.nameLeft;
-    document.getElementById("name-part2").textContent = language.fr.nameRight;
-    document.getElementById("my-description-part1").textContent =
+    document.querySelector("#name-part1").textContent = language.fr.nameLeft;
+    document.querySelector("#name-part2").textContent = language.fr.nameRight;
+    document.querySelector("#my-description-part1").textContent =
       language.fr.myDescriptionLeft;
-    document.getElementById("my-description-part2").textContent =
+    document.querySelector("#my-description-part2").textContent =
       language.fr.myDescriptionRight;
-    document.getElementById("download").textContent = language.fr.download;
-    document.getElementById("about-left").textContent = language.fr.aboutLeft;
-    document.getElementById("about-right").textContent = language.fr.aboutRight;
-    document.getElementById("about-background").textContent =
+    document.querySelector("#download").textContent = language.fr.download;
+    document.querySelector("#about-left").textContent = language.fr.aboutLeft;
+    document.querySelector("#about-right").textContent = language.fr.aboutRight;
+    document.querySelector("#about-background").textContent =
       language.fr.aboutBackground;
-    document.getElementById("about-subtitle-left").textContent =
+    document.querySelector("#about-subtitle-left").textContent =
       language.fr.aboutSubtitleLeft;
-    document.getElementById("about-subtitle-right").textContent =
+    document.querySelector("#about-subtitle-right").textContent =
       language.fr.aboutSubtitleRight;
-    document.getElementById("about-description").textContent =
+    document.querySelector("#about-description").textContent =
       language.fr.aboutDescription;
-    document.getElementById("frontend-title").textContent =
+    document.querySelector("#frontend-title").textContent =
       language.fr.frontendTitle;
-    document.getElementById("frontend-description").textContent =
+    document.querySelector("#frontend-description").textContent =
       language.fr.frontendDescription;
-    document.getElementById("backend-description").textContent =
+    document.querySelector("#backend-description").textContent =
       language.fr.backendDescription;
-    document.getElementById("linux-title").textContent = language.fr.linuxTitle;
-    document.getElementById("linux-description").textContent =
+    document.querySelector("#linux-title").textContent = language.fr.linuxTitle;
+    document.querySelector("#linux-description").textContent =
       language.fr.linuxDescription;
-    document.getElementById("portfolio-title-left").textContent =
+    document.querySelector("#portfolio-title-left").textContent =
       language.fr.portfolioTitleLeft;
-    document.getElementById("portfolio-title-background").textContent =
+    document.querySelector("#portfolio-title-background").textContent =
       language.fr.portfolioTitleBackground;
-    document.getElementById("groupomania-title").textContent =
+    document.querySelector("#groupomania-title").textContent =
       language.fr.groupomaniaTitle;
-    document.getElementById("groupomania-description").textContent =
+    document.querySelector("#groupomania-description").textContent =
       language.fr.groupomaniaDescription;
-    document.getElementById("api-title").textContent = language.fr.apiTitle;
-    document.getElementById("api-description").textContent =
+    document.querySelector("#api-title").textContent = language.fr.apiTitle;
+    document.querySelector("#api-description").textContent =
       language.fr.apiDescription;
-    document.getElementById("orinoco-title").textContent =
+    document.querySelector("#orinoco-title").textContent =
       language.fr.orinocoTitle;
-    document.getElementById("orinoco-description").textContent =
+    document.querySelector("#orinoco-description").textContent =
       language.fr.orinocoDescription;
-    document.getElementById("ohmyfood-title").textContent =
+    document.querySelector("#ohmyfood-title").textContent =
       language.fr.ohMyFoodTitle;
-    document.getElementById("ohmyfood-description").textContent =
+    document.querySelector("#ohmyfood-description").textContent =
       language.fr.ohMyFoodDescription;
-    document.getElementById("contact-title-left").textContent =
+    document.querySelector("#contact-title-left").textContent =
       language.fr.contactTitleLeft;
-    document.getElementById("contact-title-right").textContent =
+    document.querySelector("#contact-title-right").textContent =
       language.fr.contactTitleRight;
-    document.getElementById("contact-title-background").textContent =
+    document.querySelector("#contact-title-background").textContent =
       language.fr.contactTitleBackground;
-    document.getElementById("contact-subtitle-left").textContent =
+    document.querySelector("#contact-subtitle-left").textContent =
       language.fr.contactSubtitleLeft;
-    document.getElementById("contact-subtitle-right").textContent =
+    document.querySelector("#contact-subtitle-right").textContent =
       language.fr.contactSubtitleRight;
-    document.getElementById("contact-description").textContent =
+    document.querySelector("#contact-description").textContent =
       language.fr.contactSubtitleDescription;
-    document.getElementById("language-title").textContent =
+    document.querySelector("#language-title").textContent =
       language.fr.languageTitle;
-    document.getElementById("language-description").textContent =
+    document.querySelector("#language-description").textContent =
       language.fr.languageDescription;
     document.getElementsByName("email")[0].placeholder =
       language.fr.insertYourEmail;
@@ -173,73 +173,73 @@ export function toggleLanguage() {
       language.fr.insertYourTitle;
     document.getElementsByName("message")[0].placeholder =
       language.fr.insertYourMessage;
-    document.getElementById("send-message-btn").textContent =
+    document.querySelector("#send-message-btn").textContent =
       language.fr.sendMessageButton;
   }
   // display english content
   function setEnglishContent() {
-    document.getElementById("name-part1").textContent = language.eng.nameLeft;
-    document.getElementById("name-part2").textContent = language.eng.nameRight;
-    document.getElementById("my-description-part1").textContent =
+    document.querySelector("#name-part1").textContent = language.eng.nameLeft;
+    document.querySelector("#name-part2").textContent = language.eng.nameRight;
+    document.querySelector("#my-description-part1").textContent =
       language.eng.myDescriptionLeft;
-    document.getElementById("my-description-part2").textContent =
+    document.querySelector("#my-description-part2").textContent =
       language.eng.myDescriptionRight;
-    document.getElementById("download").textContent = language.eng.download;
-    document.getElementById("about-left").textContent = language.eng.aboutLeft;
-    document.getElementById("about-right").textContent =
+    document.querySelector("#download").textContent = language.eng.download;
+    document.querySelector("#about-left").textContent = language.eng.aboutLeft;
+    document.querySelector("#about-right").textContent =
       language.eng.aboutRight;
-    document.getElementById("about-background").textContent =
+    document.querySelector("#about-background").textContent =
       language.eng.aboutBackground;
-    document.getElementById("about-subtitle-right").textContent =
+    document.querySelector("#about-subtitle-right").textContent =
       language.eng.aboutSubtitleLeft;
-    document.getElementById("about-subtitle-right").textContent =
+    document.querySelector("#about-subtitle-right").textContent =
       language.eng.aboutSubtitleRight;
-    document.getElementById("about-description").textContent =
+    document.querySelector("#about-description").textContent =
       language.eng.aboutDescription;
-    document.getElementById("frontend-title").textContent =
+    document.querySelector("#frontend-title").textContent =
       language.eng.frontendTitle;
-    document.getElementById("frontend-description").textContent =
+    document.querySelector("#frontend-description").textContent =
       language.eng.frontendDescription;
-    document.getElementById("backend-description").textContent =
+    document.querySelector("#backend-description").textContent =
       language.eng.backendDescription;
-    document.getElementById("linux-title").textContent =
+    document.querySelector("#linux-title").textContent =
       language.eng.linuxTitle;
-    document.getElementById("linux-description").textContent =
+    document.querySelector("#linux-description").textContent =
       language.eng.linuxDescription;
-    document.getElementById("portfolio-title-left").textContent =
+    document.querySelector("#portfolio-title-left").textContent =
       language.eng.portfolioTitleLeft;
-    document.getElementById("portfolio-title-background").textContent =
+    document.querySelector("#portfolio-title-background").textContent =
       language.eng.portfolioTitleBackground;
-    document.getElementById("groupomania-title").textContent =
+    document.querySelector("#groupomania-title").textContent =
       language.eng.groupomaniaTitle;
-    document.getElementById("groupomania-description").textContent =
+    document.querySelector("#groupomania-description").textContent =
       language.eng.groupomaniaDescription;
-    document.getElementById("api-title").textContent = language.eng.apiTitle;
-    document.getElementById("api-description").textContent =
+    document.querySelector("#api-title").textContent = language.eng.apiTitle;
+    document.querySelector("#api-description").textContent =
       language.eng.apiDescription;
-    document.getElementById("orinoco-title").textContent =
+    document.querySelector("#orinoco-title").textContent =
       language.eng.orinocoTitle;
-    document.getElementById("orinoco-description").textContent =
+    document.querySelector("#orinoco-description").textContent =
       language.eng.orinocoDescription;
-    document.getElementById("ohmyfood-title").textContent =
+    document.querySelector("#ohmyfood-title").textContent =
       language.eng.ohMyFoodTitle;
-    document.getElementById("ohmyfood-description").textContent =
+    document.querySelector("#ohmyfood-description").textContent =
       language.eng.ohMyFoodDescription;
-    document.getElementById("contact-title-left").textContent =
+    document.querySelector("#contact-title-left").textContent =
       language.eng.contactTitleLeft;
-    document.getElementById("contact-title-right").textContent =
+    document.querySelector("#contact-title-right").textContent =
       language.eng.contactTitleRight;
-    document.getElementById("contact-title-background").textContent =
+    document.querySelector("#contact-title-background").textContent =
       language.eng.contactTitleBackground;
-    document.getElementById("contact-subtitle-left").textContent =
+    document.querySelector("#contact-subtitle-left").textContent =
       language.eng.contactSubtitleLeft;
-    document.getElementById("contact-subtitle-right").textContent =
+    document.querySelector("#contact-subtitle-right").textContent =
       language.eng.contactSubtitleRight;
-    document.getElementById("contact-description").textContent =
+    document.querySelector("#contact-description").textContent =
       language.eng.contactSubtitleDescription;
-    document.getElementById("language-title").textContent =
+    document.querySelector("#language-title").textContent =
       language.eng.languageTitle;
-    document.getElementById("language-description").textContent =
+    document.querySelector("#language-description").textContent =
       language.eng.languageDescription;
     document.getElementsByName("email")[0].placeholder =
       language.eng.insertYourEmail;
@@ -247,17 +247,17 @@ export function toggleLanguage() {
       language.eng.insertYourTitle;
     document.getElementsByName("message")[0].placeholder =
       language.eng.insertYourMessage;
-    document.getElementById("send-message-btn").textContent =
+    document.querySelector("#send-message-btn").textContent =
       language.eng.sendMessageButton;
   }
-  const english = document.getElementById("english");
-  const french = document.getElementById("french");
+  const english = document.querySelector("#english");
+  const french = document.querySelector("#french");
   const selectedLanguage = document.querySelector(".lang-selected");
   const activeLanguage = document.querySelector(".active-item-lang");
   let toggleLang;
   const menuLanguage = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
-  const resumeLink = document.getElementById("resume-link");
+  const resumeLink = document.querySelector("#resume-link");
   const englishResume =
     "assets/img/CV-BINARD_Martin_Frontend_Web_Developer.pdf";
   const frenchResume =
@@ -265,13 +265,29 @@ export function toggleLanguage() {
   // check if already visited and selected to a specific language
   // No need to reload English content if french has never been selected.
   // No subdomain for french content.
-  if (localStorage.getItem("selectedLanguage") === "french") {
+  if (
+    localStorage.getItem("selectedLanguage") === "french" ||
+    navigator.language === "fr" ||
+    navigator.language === "fr-FR" ||
+    navigator.language === "fr-CA" ||
+    navigator.language === "fr-BE" ||
+    navigator.language === "fr-CH" ||
+    navigator.language === "fr-PF"
+  ) {
     english.classList.remove("active-lang");
     french.classList.add("active-lang");
     resumeLink.href = frenchResume;
     localStorage.setItem("selectedLanguage", "french");
     setFrenchContent();
-  } else if (localStorage.getItem("selectedLanguage") === "english") {
+  } else if (
+    localStorage.getItem("selectedLanguage") === "english" ||
+    navigator.language !== "fr" ||
+    navigator.language !== "fr-FR" ||
+    navigator.language !== "fr-CA" ||
+    navigator.language !== "fr-BE" ||
+    navigator.language !== "fr-CH" ||
+    navigator.language !== "fr-PF"
+  ) {
     french.classList.remove("active-lang");
     english.classList.add("active-lang");
     resumeLink.href = englishResume;

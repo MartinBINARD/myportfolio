@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #20**
+**Main branch - Commit #21**
 
 ## Website link
 
@@ -8,13 +8,15 @@
 
 ## Description
 
-- This is a portfolio made with vanilla JS that uses the KISS principle :raised_hands:.
+- This is a portfolio made with vanilla JS, Babel & webpack that uses the KISS principle :raised_hands:.
 - No subdomain for french content and english content is already set in HTML for SEO. This why english content is not loaded by default.
 - It will be soon hosted.
 
 ## Change done
 
-- Add webpack, babel & french resume.
+- Detect client browser language.
+- Add project stack tag on hover project picture.
+- Change background color.
 
 ## License
 
