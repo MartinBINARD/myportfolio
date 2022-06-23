@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #21**
+**Main branch - Commit #22**
 
 ## Website link
 
@@ -14,9 +14,8 @@
 
 ## Change done
 
-- Detect client browser language.
-- Add project stack tag on hover project picture.
-- Change background color.
+- Add condition to avoid english content loading if user browser is not in french.
+- Added black borders on skills paragraphs for the light theme.
 
 ## License
 

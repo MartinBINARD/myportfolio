@@ -27,8 +27,8 @@ export function toggleLanguage() {
       portfolioTitleBackground: "my portfolio",
       groupomaniaTitle: "Secure Social Network",
       groupomaniaDescription:
-        "Groupomania, a private social network using VueJS 3, nodeJS, express, MySQL & Sequelize...",
-      apiTitle: "REST API with NodeJS",
+        "Groupomania, a private social network with admin privileges and secure database...",
+      apiTitle: "REST API for a web application review",
       apiDescription:
         "Using CRUD operations for a gastronomic review application...",
       orinocoTitle: "E-commerce website in Javascript",
@@ -36,7 +36,7 @@ export function toggleLanguage() {
         "The customer can select different items and add it to its cart...",
       ohMyFoodTitle: "A french booking menu website",
       ohMyFoodDescription:
-        "A mobile-first website with transition effects and load spinner with CSS & SASS...",
+        "A mobile-first website with transition effects and load spinner...",
       contactTitleLeft: "contact ",
       contactTitleRight: "me",
       contactTitleBackground: "contact me",
@@ -78,8 +78,8 @@ export function toggleLanguage() {
       portfolioTitleBackground: "mon portfolio",
       groupomaniaTitle: "Réseau social sécurisé",
       groupomaniaDescription:
-        "Groupomania, un réseau social privé utilisant VueJS 3, nodeJS, express, MySQL & Sequelize...",
-      apiTitle: "API REST avec NodeJS",
+        "Groupomania, un réseau social privé avec privilèges d'administrateur et base de données sécurisée...",
+      apiTitle: "API REST pour une revue d'application web",
       apiDescription:
         "Utilisation des opérations CRUD pour une application de revue gastronomique...",
       orinocoTitle: "Site e-commerce en Javascript",
@@ -87,7 +87,7 @@ export function toggleLanguage() {
         "Le client peut sélectionner différents articles et l'ajouter à son panier...",
       ohMyFoodTitle: "Un site de réservation de menus français",
       ohMyFoodDescription:
-        "Un site Web mobile-first avec des effets de transition et un load spinner avec CSS & SASS...",
+        "Un site Web mobile-first avec des effets de transition et un load spinner...",
       contactTitleLeft: "contactez ",
       contactTitleRight: "moi",
       contactTitleBackground: "Contactez moi",
@@ -279,8 +279,13 @@ export function toggleLanguage() {
     resumeLink.href = frenchResume;
     localStorage.setItem("selectedLanguage", "french");
     setFrenchContent();
+  } else if (localStorage.getItem("selectedLanguage") === "english") {
+    french.classList.remove("active-lang");
+    english.classList.add("active-lang");
+    resumeLink.href = englishResume;
+    localStorage.setItem("selectedLanguage", "english");
+    setEnglishContent();
   } else if (
-    localStorage.getItem("selectedLanguage") === "english" ||
     navigator.language !== "fr" ||
     navigator.language !== "fr-FR" ||
     navigator.language !== "fr-CA" ||
@@ -288,12 +293,6 @@ export function toggleLanguage() {
     navigator.language !== "fr-CH" ||
     navigator.language !== "fr-PF"
   ) {
-    french.classList.remove("active-lang");
-    english.classList.add("active-lang");
-    resumeLink.href = englishResume;
-    localStorage.setItem("selectedLanguage", "english");
-    setEnglishContent();
-  } else {
     console.log("No language selected !");
   }
   // open and close dropdown menu
