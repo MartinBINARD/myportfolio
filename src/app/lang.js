@@ -1,10 +1,9 @@
 export function toggleLanguage() {
   const language = {
     eng: {
-      nameLeft: "Hi, I'm",
-      nameRight: "Web Developer.",
+      greeting: "Hi, I'm",
       myDescriptionLeft:
-        "I'm a Javascript Web Developer mainly focused on interface of website in ",
+        "I'm Javascript Web Developer mainly focused on interface of website in ",
       myDescriptionRight:
         " and also having skills in NodeJS and Express server.",
       download: "Download CV",
@@ -49,10 +48,9 @@ export function toggleLanguage() {
       sendMessageButton: "Send message",
     },
     fr: {
-      nameLeft: "Bonjour, je suis",
-      nameRight: "Développeur Web.",
+      greeting: "Bonjour, je suis",
       myDescriptionLeft:
-        "Je suis un développeur Web Javascript principalement axé sur l'interface de site Web en ",
+        "Je suis développeur Web Javascript principalement axé sur l'interface de site Web en ",
       myDescriptionRight:
         " et j'ai aussi des compétences en NodeJS et serveur Express.",
       download: "Télécharger le CV",
@@ -100,8 +98,7 @@ export function toggleLanguage() {
 
   // display french content
   function setFrenchContent() {
-    document.querySelector("#name-part1").textContent = language.fr.nameLeft;
-    document.querySelector("#name-part2").textContent = language.fr.nameRight;
+    document.querySelector("#greeting").textContent = language.fr.greeting;
     document.querySelector("#my-description-part1").textContent =
       language.fr.myDescriptionLeft;
     document.querySelector("#my-description-part2").textContent =
@@ -166,8 +163,7 @@ export function toggleLanguage() {
   }
   // display english content
   function setEnglishContent() {
-    document.querySelector("#name-part1").textContent = language.eng.nameLeft;
-    document.querySelector("#name-part2").textContent = language.eng.nameRight;
+    document.querySelector("#greeting").textContent = language.eng.greeting;
     document.querySelector("#my-description-part1").textContent =
       language.eng.myDescriptionLeft;
     document.querySelector("#my-description-part2").textContent =

@@ -43,41 +43,30 @@
     padding-right: 15rem;
     .name {
       display: flex;
-      font-size: 2rem;
-      .dynamic-texts {
-        line-height: 3rem;
-        height: 3rem;
-        overflow: hidden;
-      }
-      .dynamic-texts li {
+      flex-direction: column;
+      .dynamic-text {
         position: relative;
         top: 0;
-        animation: slide 8s steps(2) infinite;
-        
         color: var(--color-secondary);
-        margin-left: 0.5rem;
+        width: max-content;
+        &::before,
         &::after {
           position: absolute;
-          left: 0;
           content: "";
-          height: 100%;
-          width: 100%;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+        &::before {
           background-color: var(--color-primary);
           border-left: 2px solid var(--color-secondary);
-          animation: typing 4s steps(25) infinite;
-        }
-        @keyframes typing {
-          40%,60% {
-            left: calc(100% + 0.5rem);
-          }
-          100% {
-            left: 0;
-          }
+          animation: typing 10s 1s steps(14) infinite;
         }
       }
-      @keyframes slide {
-        100% {
-          top: -6rem;
+      @keyframes typing {
+        to {
+          left: 100%;
         }
       }
     }
@@ -93,7 +82,6 @@
       overflow: hidden;
       border-radius: 30px;
       color: inherit;
-      font-weight: 1rem;
       position: relative;
       border: 1px solid var(--color-secondary);
       .btn-text {

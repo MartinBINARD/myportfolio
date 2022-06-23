@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #23**
+**Main branch - Commit #24**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add typing writer effect.
+- Update typing writer effect.
 
 ## License
 
