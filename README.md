@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #22**
+**Main branch - Commit #23**
 
 ## Website link
 
@@ -14,8 +14,7 @@
 
 ## Change done
 
-- Add condition to avoid english content loading if user browser is not in french.
-- Added black borders on skills paragraphs for the light theme.
+- Add typing writer effect.
 
 ## License
 

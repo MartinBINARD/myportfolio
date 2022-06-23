@@ -1,8 +1,8 @@
 export function toggleLanguage() {
   const language = {
     eng: {
-      nameLeft: "Hi, I'm ",
-      nameRight: " VueJS Frontend Web Developer.",
+      nameLeft: "Hi, I'm",
+      nameRight: "Web Developer.",
       myDescriptionLeft:
         "I'm a Javascript Web Developer mainly focused on interface of website in ",
       myDescriptionRight:
@@ -10,7 +10,6 @@ export function toggleLanguage() {
       download: "Download CV",
       aboutLeft: "About ",
       aboutRight: "me",
-      aboutBackground: "about me",
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " about me",
       aboutDescription:
@@ -24,7 +23,6 @@ export function toggleLanguage() {
       linuxDescription:
         "I'm familiar with UNIX commands and use a Linux Arch-based distribution on my daily computer.",
       portfolioTitleLeft: "My ",
-      portfolioTitleBackground: "my portfolio",
       groupomaniaTitle: "Secure Social Network",
       groupomaniaDescription:
         "Groupomania, a private social network with admin privileges and secure database...",
@@ -39,7 +37,6 @@ export function toggleLanguage() {
         "A mobile-first website with transition effects and load spinner...",
       contactTitleLeft: "contact ",
       contactTitleRight: "me",
-      contactTitleBackground: "contact me",
       contactSubtitleLeft: "Drop me",
       contactSubtitleRight: " a message",
       contactSubtitleDescription:
@@ -52,8 +49,8 @@ export function toggleLanguage() {
       sendMessageButton: "Send message",
     },
     fr: {
-      nameLeft: "Bonjour, je suis ",
-      nameRight: " Développeur Web Frontend VueJS.",
+      nameLeft: "Bonjour, je suis",
+      nameRight: "Développeur Web.",
       myDescriptionLeft:
         "Je suis un développeur Web Javascript principalement axé sur l'interface de site Web en ",
       myDescriptionRight:
@@ -61,7 +58,6 @@ export function toggleLanguage() {
       download: "Télécharger le CV",
       aboutLeft: "A propos de ",
       aboutRight: "moi",
-      aboutBackground: "A propos de moi",
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " me concernant",
       aboutDescription:
@@ -75,7 +71,6 @@ export function toggleLanguage() {
       linuxDescription:
         "Je connais les commandes UNIX et j'utilise quotidiennement une distribution basée sur Arch Linux sur mon ordinateur.",
       portfolioTitleLeft: "Mon ",
-      portfolioTitleBackground: "mon portfolio",
       groupomaniaTitle: "Réseau social sécurisé",
       groupomaniaDescription:
         "Groupomania, un réseau social privé avec privilèges d'administrateur et base de données sécurisée...",
@@ -90,7 +85,6 @@ export function toggleLanguage() {
         "Un site Web mobile-first avec des effets de transition et un load spinner...",
       contactTitleLeft: "contactez ",
       contactTitleRight: "moi",
-      contactTitleBackground: "Contactez moi",
       contactSubtitleLeft: "Laissez-moi",
       contactSubtitleRight: " un message",
       contactSubtitleDescription:
@@ -115,8 +109,6 @@ export function toggleLanguage() {
     document.querySelector("#download").textContent = language.fr.download;
     document.querySelector("#about-left").textContent = language.fr.aboutLeft;
     document.querySelector("#about-right").textContent = language.fr.aboutRight;
-    document.querySelector("#about-background").textContent =
-      language.fr.aboutBackground;
     document.querySelector("#about-subtitle-left").textContent =
       language.fr.aboutSubtitleLeft;
     document.querySelector("#about-subtitle-right").textContent =
@@ -134,8 +126,6 @@ export function toggleLanguage() {
       language.fr.linuxDescription;
     document.querySelector("#portfolio-title-left").textContent =
       language.fr.portfolioTitleLeft;
-    document.querySelector("#portfolio-title-background").textContent =
-      language.fr.portfolioTitleBackground;
     document.querySelector("#groupomania-title").textContent =
       language.fr.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
@@ -155,8 +145,6 @@ export function toggleLanguage() {
       language.fr.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
       language.fr.contactTitleRight;
-    document.querySelector("#contact-title-background").textContent =
-      language.fr.contactTitleBackground;
     document.querySelector("#contact-subtitle-left").textContent =
       language.fr.contactSubtitleLeft;
     document.querySelector("#contact-subtitle-right").textContent =
@@ -188,8 +176,6 @@ export function toggleLanguage() {
     document.querySelector("#about-left").textContent = language.eng.aboutLeft;
     document.querySelector("#about-right").textContent =
       language.eng.aboutRight;
-    document.querySelector("#about-background").textContent =
-      language.eng.aboutBackground;
     document.querySelector("#about-subtitle-right").textContent =
       language.eng.aboutSubtitleLeft;
     document.querySelector("#about-subtitle-right").textContent =
@@ -208,8 +194,6 @@ export function toggleLanguage() {
       language.eng.linuxDescription;
     document.querySelector("#portfolio-title-left").textContent =
       language.eng.portfolioTitleLeft;
-    document.querySelector("#portfolio-title-background").textContent =
-      language.eng.portfolioTitleBackground;
     document.querySelector("#groupomania-title").textContent =
       language.eng.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
@@ -229,8 +213,6 @@ export function toggleLanguage() {
       language.eng.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
       language.eng.contactTitleRight;
-    document.querySelector("#contact-title-background").textContent =
-      language.eng.contactTitleBackground;
     document.querySelector("#contact-subtitle-left").textContent =
       language.eng.contactSubtitleLeft;
     document.querySelector("#contact-subtitle-right").textContent =
