@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #25**
+**Main branch - Commit #26**
 
 ## Website link
 
@@ -9,12 +9,12 @@
 ## Description
 
 - This is a portfolio made with vanilla JS, Babel & webpack that uses the KISS principle :raised_hands:.
-- No subdomain for french content and english content is already set in HTML for SEO. This why english content is not loaded by default.
+- No subdomain for french content and english content is already set in HTML for SEO. This is why english content is not loaded by default.
 - It will be soon hosted.
 
 ## Change done
 
-- Add blob on my face picture and envelope picture on send button.
+- Update blob picture on hover.
 
 ## License
 
