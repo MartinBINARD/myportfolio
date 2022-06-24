@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #24**
+**Main branch - Commit #25**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Update typing writer effect.
+- Add blob on my face picture and envelope picture on send button.
 
 ## License
 

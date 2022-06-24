@@ -23,8 +23,12 @@
       height: 45%;
       background-color: var(--color-black);
       transition: all 0.3s ease-in-out;
+      border-radius: 53% 47% 18% 82% / 46% 26% 74% 54%;
+      // &:hover {
+      //   border-radius: 72% 28% 79% 21% / 41% 46% 54% 59% ;
+      // }
       img {
-        border-radius: var(--br-sm-2);
+        border-radius: 53% 47% 18% 82% / 46% 26% 74% 54%;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -32,6 +36,7 @@
         filter: grayscale(100%);
         &:hover {
           filter: grayscale(0);
+          // border-radius: 72% 28% 79% 21% / 41% 46% 54% 59% ;
         }
       }
     }
@@ -61,7 +66,7 @@
         &::before {
           background-color: var(--color-primary);
           border-left: 2px solid var(--color-secondary);
-          animation: typing 10s 1s steps(14) infinite;
+          animation: typing 4s 1s steps(14) infinite;
         }
       }
       @keyframes typing {
@@ -74,44 +79,6 @@
       margin: 1.5rem 0;
       line-height: 2rem;
       font-size: 1.4rem;
-    }
-    .main-btn {
-      display: flex;
-      align-self: flex-start;
-      align-items: center;
-      overflow: hidden;
-      border-radius: 30px;
-      color: inherit;
-      position: relative;
-      border: 1px solid var(--color-secondary);
-      .btn-text {
-        padding: 0 2rem;
-      }
-      .btn-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-secondary);
-        border-radius: 50%;
-        padding: 1rem;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: var(--color-secondary);
-        z-index: -1;
-        transition: transform 0.3s ease-in-out;
-        transform: scaleX(0);
-        transform-origin: right;
-      }
-      &:hover::before,
-      &:focus::before {
-        transform: scaleX(1);
-      }
     }
   }
 }

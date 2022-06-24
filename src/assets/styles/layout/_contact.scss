@@ -77,44 +77,15 @@
         font-family: inherit;
         padding: 0.8rem 1.1rem;
         outline: none;
-        border: 1px solid #42b983;
+        border: 1px solid;
         background-color: var(--color-input);
         width: 100%;
         color: var(--color-white);
         resize: none;
         &:focus {
-          background-color: var(--color-input-focus);
+          border-color: var(--color-secondary);
         }
       }
     }
-  }
-}
-
-.submit-btn {
-  text-align: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--color-secondary);
-  border-radius: 30px;
-  padding: 0.5rem;
-  max-width: 15rem;
-  cursor: pointer;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--color-secondary);
-    z-index: -1;
-    transition: transform 0.3s ease-in-out;
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-  &:hover::before,
-  &:focus::before {
-    transform: scaleX(1);
   }
 }
