@@ -447,13 +447,17 @@
               </div>
             </div>
             <div class="right-contact">
-              <form action="" class="contact-form">
+              <form
+                action="https://formsubmit.co/martin.binard.dev@gmail.com"
+                method="POST"
+                class="contact-form"
+              >
                 <div class="input-control">
                   <div class="input-control">
                     <input
                       type="email"
                       required
-                      placeholder="Insert your email..."
+                      placeholder="Your email..."
                       name="email"
                     />
                   </div>
@@ -461,21 +465,31 @@
                     <input
                       type="text"
                       required
-                      placeholder="Insert your title..."
-                      name="title"
+                      placeholder="Your Lastname & Firstname..."
+                      name="name"
                     />
                   </div>
                   <div class="input-control">
                     <textarea
                       type="text"
                       required
-                      name="message"
+                      name="text"
                       cols="15"
                       rows="8"
-                      placeholder="Insert your message..."
+                      placeholder="Your message..."
                     ></textarea>
                   </div>
-                  <button type="submit" class="submit-btn">
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New portfolio message !"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <button
+                    type="submit"
+                    class="submit-btn"
+                    onclick="this.classList.toggle('submit-btn--loading')"
+                  >
                     <span class="btn-text" id="send-message-btn"
                       >Send message</span
                     >

@@ -1,40 +1,77 @@
-    .main-btn, .submit-btn {
-      display: flex;
-      align-self: flex-start;
-      align-items: center;
-      overflow: hidden;
-      border-radius: 30px;
-      color: inherit;
-      position: relative;
-      border: 1px solid var(--color-secondary);
-      width: max-content;
-      cursor: pointer;
-      .btn-text {
-        padding: 0 1.5rem;
-      }
-      .btn-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-secondary);
-        border-radius: 50%;
-        padding: 1rem;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: var(--color-secondary);
-        z-index: -1;
-        transition: transform 0.3s ease-in-out;
-        transform: scaleX(0);
-        transform-origin: right;
-      }
-      &:hover::before,
-      &:focus::before {
-        transform: scaleX(1);
-      }
-    }
+.main-btn,
+.submit-btn {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+  color: inherit;
+  border: 1px solid var(--color-secondary);
+  width: max-content;
+  cursor: pointer;
+  .btn-text {
+    padding: 0 1.5rem;
+  }
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-secondary);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  &:hover::before,
+  &:focus::before {
+    transform: scaleX(1);
+  }
+}
+
+.submit-btn {
+  .btn-text {
+    transition: all 0.2s;
+  }
+}
+
+.submit-btn--loading .btn-text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.submit-btn--loading::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 5px solid transparent;
+  border-top-color: var(--color-white);
+  border-radius: 50%;
+  animation: submit-btn-loading-spinner 1s ease infinite;
+}
+
+@keyframes submit-btn-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

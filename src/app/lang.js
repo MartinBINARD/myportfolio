@@ -42,9 +42,9 @@ export function toggleLanguage() {
         "I look forward to make my contribution within a development team and put my skills at your service.",
       languageTitle: "Languages :",
       languageDescription: "English, French",
-      insertYourEmail: "Insert your email...",
-      insertYourTitle: "Insert your title...",
-      insertYourMessage: "Insert your message...",
+      insertYourEmail: "Your email...",
+      insertYourName: "Your Lastname & Firstname...",
+      insertYourMessage: "Your message...",
       sendMessageButton: "Send message",
     },
     fr: {
@@ -89,9 +89,9 @@ export function toggleLanguage() {
         "J'ai hâte d'apporter ma contribution au sein d'une équipe de développement et de mettre mes compétences à votre service.",
       languageTitle: "Langues :",
       languageDescription: "Anglais, Français",
-      insertYourEmail: "Insérez votre email...",
-      insertYourTitle: "Insérez votre titre...",
-      insertYourMessage: "Insérez votre message...",
+      insertYourEmail: "Votre email...",
+      insertYourName: "Votre Nom & Prénom...",
+      insertYourMessage: "Votre message...",
       sendMessageButton: "Envoyer le message",
     },
   };
@@ -154,9 +154,9 @@ export function toggleLanguage() {
       language.fr.languageDescription;
     document.getElementsByName("email")[0].placeholder =
       language.fr.insertYourEmail;
-    document.getElementsByName("title")[0].placeholder =
-      language.fr.insertYourTitle;
-    document.getElementsByName("message")[0].placeholder =
+    document.getElementsByName("name")[0].placeholder =
+      language.fr.insertYourName;
+    document.getElementsByName("text")[0].placeholder =
       language.fr.insertYourMessage;
     document.querySelector("#send-message-btn").textContent =
       language.fr.sendMessageButton;
@@ -221,9 +221,9 @@ export function toggleLanguage() {
       language.eng.languageDescription;
     document.getElementsByName("email")[0].placeholder =
       language.eng.insertYourEmail;
-    document.getElementsByName("title")[0].placeholder =
-      language.eng.insertYourTitle;
-    document.getElementsByName("message")[0].placeholder =
+    document.getElementsByName("name")[0].placeholder =
+      language.eng.insertYourName;
+    document.getElementsByName("text")[0].placeholder =
       language.eng.insertYourMessage;
     document.querySelector("#send-message-btn").textContent =
       language.eng.sendMessageButton;

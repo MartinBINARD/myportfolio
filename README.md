@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #28**
+**Main branch - Commit #29**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add button form styling reset.
+- Add form action & submit button loader spinner.
 
 ## License
 
