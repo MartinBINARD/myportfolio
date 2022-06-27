@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #27**
+**Main branch - Commit #28**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add blinking cursor on typewriting effect.
+- Add button form styling reset.
 
 ## License
 
