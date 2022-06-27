@@ -64,13 +64,22 @@
         }
         &::before {
           background-color: var(--color-primary);
-          border-left: 2px solid var(--color-secondary);
-          animation: typing 4s 3s steps(14) infinite;
+          animation: typing 4s 2s steps(14) forwards;
+        }
+        &::after {
+          width: 4px;
+          background-color: var(--color-secondary);
+          animation: typing 4s 2s steps(14) forwards, blink 750ms steps(14) infinite;
         }
       }
       @keyframes typing {
         to {
           left: 100%;
+        }
+      }
+      @keyframes blink {
+        to {
+          background: transparent;
         }
       }
     }

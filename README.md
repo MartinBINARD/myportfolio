@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #26**
+**Main branch - Commit #27**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Update blob picture on hover.
+- Add blinking cursor on typewriting effect.
 
 ## License
 
