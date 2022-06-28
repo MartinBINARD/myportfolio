@@ -450,6 +450,7 @@
               <form
                 action="https://formsubmit.co/martin.binard.dev@gmail.com"
                 method="POST"
+                name="form"
                 class="contact-form"
               >
                 <div class="input-control">
@@ -485,11 +486,7 @@
                     value="New portfolio message !"
                   />
                   <input type="hidden" name="_captcha" value="false" />
-                  <button
-                    type="submit"
-                    class="submit-btn"
-                    onclick="this.classList.toggle('submit-btn--loading')"
-                  >
+                  <button type="submit" class="submit-btn" id="submit-btn">
                     <span class="btn-text" id="send-message-btn"
                       >Send message</span
                     >

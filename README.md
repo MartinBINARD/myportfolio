@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #29**
+**Main branch - Commit #30**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add form action & submit button loader spinner.
+- Add loader when submit form.
 
 ## License
 
