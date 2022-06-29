@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #31**
+**Main branch - Commit #32**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add div buttons for sections menu for accessibility.
+- Add tab index for accessibility.
 
 ## License
 

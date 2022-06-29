@@ -85,7 +85,7 @@
             </p>
           </div>
           <div class="right-about">
-            <div class="skills-item">
+            <div class="skills-item" tabindex="0">
               <div class="icons">
                 <svg class="logo" id="vuejs" viewBox="0 0 128 128">
                   <path
@@ -141,7 +141,7 @@
                 with HTML, CSS, SASS and vanilla Javascript.
               </p>
             </div>
-            <div class="skills-item">
+            <div class="skills-item" tabindex="0">
               <div class="icons">
                 <svg class="logo" id="nodejs" viewBox="0 0 128 128">
                   <path
@@ -205,7 +205,7 @@
                 database through Sequelize library.
               </p>
             </div>
-            <div class="skills-item">
+            <div class="skills-item" tabindex="0">
               <div class="icons">
                 <svg class="logo" id="tux" viewBox="0 0 128 128">
                   <path
@@ -251,7 +251,7 @@
           </h2>
         </div>
         <div class="portfolios">
-          <div class="portfolio-item">
+          <div class="portfolio-item" tabindex="0">
             <div class="container-image">
               <img
                 class="image"
@@ -278,6 +278,7 @@
                   class="icon-link"
                   href="https://github.com/MartinBINARD/MartinBinard_7_02122021"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-github"></i>
                 </a>
@@ -285,13 +286,14 @@
                   class="icon-link"
                   href="https://www.youtube.com/watch?v=3EP2cDBHx0U"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-youtube"></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="portfolio-item">
+          <div class="portfolio-item" tabindex="0">
             <div class="container-image">
               <img
                 class="image"
@@ -314,13 +316,14 @@
                   class="icon-link"
                   href="https://github.com/MartinBINARD/MartinBinard_6_05102021"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="portfolio-item">
+          <div class="portfolio-item" tabindex="0">
             <div class="container-image">
               <img
                 class="image"
@@ -343,6 +346,7 @@
                   class="icon-link"
                   href="https://github.com/MartinBINARD/MartinBinard_5_23082021"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-github"></i>
                 </a>
@@ -350,13 +354,14 @@
                   class="icon-link"
                   href="https://martinbinard.github.io/MartinBinard_5_23082021/Front-end/"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-chrome"></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="portfolio-item">
+          <div class="portfolio-item" tabindex="0">
             <div class="container-image">
               <img
                 class="image"
@@ -380,6 +385,7 @@
                   class="icon-link"
                   href="https://github.com/MartinBINARD/MartinBinard_3_29062021"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-github"></i>
                 </a>
@@ -387,6 +393,7 @@
                   class="icon-link"
                   href="https://martinbinard.github.io/MartinBinard_3_29062021/"
                   target="_blank"
+                  tabindex="0"
                 >
                   <i class="fab fa-chrome"></i>
                 </a>
@@ -517,12 +524,14 @@
       </button>
     </aside>
 
-    <aside class="theme-btn">
-      <i class="fas fa-adjust"></i>
+    <aside class="theme">
+      <button class="theme-btn" tabindex="0">
+        <i class="fas fa-adjust"></i>
+      </button>
     </aside>
 
     <aside class="lang-menu">
-      <div class="lang-selected">
+      <button class="lang-selected" tabindex="0">
         <div class="img-selected active-lang" id="english">
           <img src="assets/img/american.png" alt="english language" />
         </div>
@@ -545,14 +554,22 @@
             points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
           />
         </svg>
-      </div>
+      </button>
       <div class="bloc-links">
         <ul>
-          <li class="lang active-item-lang" data-id="english">
-            <img src="assets/img/american.png" alt="english language" />
+          <li>
+            <button
+              class="lang active-item-lang"
+              data-id="english"
+              tabindex="0"
+            >
+              <img src="assets/img/american.png" alt="english language" />
+            </button>
           </li>
-          <li class="lang" data-id="french">
-            <img src="assets/img/french.png" alt="langue française" />
+          <li>
+            <button class="lang" data-id="french" tabindex="0">
+              <img src="assets/img/french.png" alt="langue française" />
+            </button>
           </li>
         </ul>
       </div>

@@ -67,7 +67,7 @@
             color: var(--color-white);
             margin: 0 1rem;
           }
-          &:hover {
+          &:hover, &:focus {
             background-color: var(--color-white);
             i {
               color: var(--color-primary);
@@ -79,7 +79,8 @@
   }
 }
 
-.portfolio-item:hover .hover-item {
+.portfolio-item:hover .hover-item,
+.portfolio-item:focus .hover-item {
   opacity: 1;
   transform: scale(1);
 }

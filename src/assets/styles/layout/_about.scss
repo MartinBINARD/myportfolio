@@ -26,6 +26,7 @@
       transition: all 0.3s ease-in-out;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
       padding: 2rem;
+	    outline: var(--color-secondary);
       h4 {
         font-size: 1.5rem;
         transition: all 0.3s ease-in-out;
@@ -34,7 +35,7 @@
       p {
         line-height: 2rem;
       }
-      &:hover {
+      &:hover, &:focus {
         cursor: default;
         transform: translateY(-5px);
         border: 1px solid var(--color-secondary);
