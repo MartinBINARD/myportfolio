@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #30**
+**Main branch - Commit #31**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add loader when submit form.
+- Add div buttons for sections menu for accessibility.
 
 ## License
 
