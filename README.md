@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #35**
+**Main branch - Commit #36**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add resumes in JPG to respect recommended asset size limit.
+- Update npm packages.
 
 ## License
 
