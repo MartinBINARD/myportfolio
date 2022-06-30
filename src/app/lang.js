@@ -236,8 +236,8 @@ export function toggleLanguage() {
   const menuLanguage = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
   const resumeLink = document.querySelector("#resume-link");
-  const englishResume = "assets/img/CV-BINARD_Martin_Web_Developer.pdf";
-  const frenchResume = "assets/img/CV_BINARD_Martin_Développeur_Web.pdf";
+  const englishResume = "assets/img/CV-BINARD_Martin_Web_Developer.jpg";
+  const frenchResume = "assets/img/CV_BINARD_Martin_Développeur_Web.jpg";
   // check if already visited and selected to a specific language
   // No need to reload English content if french has never been selected.
   // No subdomain for french content.

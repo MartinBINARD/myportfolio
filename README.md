@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #34**
+**Main branch - Commit #35**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add meta keywords and description.
+- Add resumes in JPG to respect recommended asset size limit.
 
 ## License
 
