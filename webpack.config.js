@@ -37,7 +37,7 @@ module.exports = {
     }),
   ],
   devtool: "source-map",
-  mode: "development",
+  mode: "production",
   devServer: {
     static: path.resolve(__dirname, "./dist"),
     open: true,

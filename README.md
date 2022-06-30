@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #33**
+**Main branch - Commit #34**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add max-width and change position to language button.
+- Add meta keywords and description.
 
 ## License
 
