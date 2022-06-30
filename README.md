@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #32**
+**Main branch - Commit #33**
 
 ## Website link
 
@@ -14,7 +14,7 @@
 
 ## Change done
 
-- Add tab index for accessibility.
+- Add max-width and change position to language button.
 
 ## License
 

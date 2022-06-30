@@ -50,7 +50,7 @@ export function toggleLanguage() {
     fr: {
       greeting: "Bonjour, je suis",
       myDescriptionLeft:
-        "Je suis développeur Web Javascript principalement axé sur l'interface de site Web en ",
+        "Je suis Développeur Web Javascript principalement axé sur l'interface de site Web en ",
       myDescriptionRight:
         " et j'ai aussi des compétences en NodeJS et serveur Express.",
       download: "Télécharger le CV",
@@ -236,10 +236,8 @@ export function toggleLanguage() {
   const menuLanguage = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
   const resumeLink = document.querySelector("#resume-link");
-  const englishResume =
-    "assets/img/CV-BINARD_Martin_Frontend_Web_Developer.pdf";
-  const frenchResume =
-    "assets/img/CV_BINARD_Martin_Développeur_Web_Frontend.pdf";
+  const englishResume = "assets/img/CV-BINARD_Martin_Web_Developer.pdf";
+  const frenchResume = "assets/img/CV_BINARD_Martin_Développeur_Web.pdf";
   // check if already visited and selected to a specific language
   // No need to reload English content if french has never been selected.
   // No subdomain for french content.
