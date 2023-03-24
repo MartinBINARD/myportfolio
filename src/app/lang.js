@@ -126,18 +126,6 @@ export function toggleLanguage() {
     document.querySelector("#groupomania-title").textContent =
       language.fr.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
-      language.fr.groupomaniaDescription;
-    document.querySelector("#api-title").textContent = language.fr.apiTitle;
-    document.querySelector("#api-description").textContent =
-      language.fr.apiDescription;
-    document.querySelector("#orinoco-title").textContent =
-      language.fr.orinocoTitle;
-    document.querySelector("#orinoco-description").textContent =
-      language.fr.orinocoDescription;
-    document.querySelector("#ohmyfood-title").textContent =
-      language.fr.ohMyFoodTitle;
-    document.querySelector("#ohmyfood-description").textContent =
-      language.fr.ohMyFoodDescription;
     document.querySelector("#contact-title-left").textContent =
       language.fr.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
@@ -194,17 +182,6 @@ export function toggleLanguage() {
       language.eng.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
       language.eng.groupomaniaDescription;
-    document.querySelector("#api-title").textContent = language.eng.apiTitle;
-    document.querySelector("#api-description").textContent =
-      language.eng.apiDescription;
-    document.querySelector("#orinoco-title").textContent =
-      language.eng.orinocoTitle;
-    document.querySelector("#orinoco-description").textContent =
-      language.eng.orinocoDescription;
-    document.querySelector("#ohmyfood-title").textContent =
-      language.eng.ohMyFoodTitle;
-    document.querySelector("#ohmyfood-description").textContent =
-      language.eng.ohMyFoodDescription;
     document.querySelector("#contact-title-left").textContent =
       language.eng.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =

@@ -38,14 +38,13 @@ module.exports = {
     }),
     new CspHtmlWebpackPlugin({
       'default-src': "'self'",
-      'script-src': ["'self'"],
+      'script-src': ["'self'", "https://martin-binard.com/main.bundle.js"],
       'style-src': ["'self'", "'unsafe-inline'"],
       'font-src': ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
       'style-src-elem': ["'self'", "https://fonts.googleapis.com", "'unsafe-inline'"],
       }),
   ],
   stats: "minimal",
-  devtool: "source-map",
   mode: "production",
   devServer: {
     static: path.resolve(__dirname, "./dist"),

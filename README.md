@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #39**
+**Main branch - Commit #40**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Add Content Security Protection and Update npm packages.
+- Add bundle exception for CSP and debug JS.
 
 ## License
 
