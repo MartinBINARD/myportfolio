@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CspHtmlWebpackPlugin = require('csp-html-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
@@ -35,6 +36,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
     }),
+    new CspHtmlWebpackPlugin({
+      'default-src': "'self'",
+      'script-src': ["'self'"],
+      'style-src': ["'self'", "'unsafe-inline'"],
+      'font-src': ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
+      'style-src-elem': ["'self'", "https://fonts.googleapis.com", "'unsafe-inline'"],
+      }),
   ],
   stats: "minimal",
   devtool: "source-map",

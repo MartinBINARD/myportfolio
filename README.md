@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #38**
+**Main branch - Commit #39**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update npm packages.
+- Add Content Security Protection and Update npm packages.
 
 ## License
 

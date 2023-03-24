@@ -62,14 +62,22 @@
           margin: 0 1rem;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
-          i {
-            font-size: 1.5rem;
+          span {
             color: var(--color-white);
+          }
+          .icons-svg {
+            height: 1.5rem;
             margin: 0 1rem;
+            g {
+              fill: var(--color-white);
+            }
           }
           &:hover, &:focus {
             background-color: var(--color-white);
-            i {
+            .icons-svg g {
+              fill: var(--color-primary);
+            }
+            span {
               color: var(--color-primary);
             }
           }

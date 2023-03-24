@@ -19,8 +19,8 @@
     justify-content: center;
     margin: 0.7rem 0;
     box-shadow: var(--box-shadow-1);
-    i {
-      font-size: 1.2rem;
+    &__icon {
+      font-size: 1.5rem;
       color: var(--color-grey-2);
       pointer-events: none;
     }
@@ -31,7 +31,7 @@
   .active-btn {
     background-color: var(--color-secondary);
     transition: all 0.3s ease-in-out;
-    i {
+    .control__icon {
       color: var(--color-white);
     }
   }
@@ -54,8 +54,8 @@
   &:active {
     transform: translateY(-3px);
   }
-  i {
-    font-size: 1.4rem;
+  &__contrast {
+    font-size: 1.5rem;
     color: var(--color-light-theme-btn);
     pointer-events: none;
   }
