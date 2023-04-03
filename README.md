@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #40**
+**Main branch - Commit #41**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Add bundle exception for CSP and debug JS.
+- Remove CSP Bugs.
 
 ## License
 

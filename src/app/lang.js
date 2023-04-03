@@ -126,6 +126,7 @@ export function toggleLanguage() {
     document.querySelector("#groupomania-title").textContent =
       language.fr.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
+        language.fr.groupomaniaDescription;
     document.querySelector("#contact-title-left").textContent =
       language.fr.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
@@ -282,7 +283,6 @@ export function toggleLanguage() {
     if (!toggleLang) {
       menuLanguage.style.height = `${menuLanguage.scrollHeight}px`;
       toggleLang = true;
-      return;
     } else {
       menuLanguage.style.height = 0;
       toggleLang = false;
