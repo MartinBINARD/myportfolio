@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #43**
+**Main branch - Commit #44**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Modify expand icon.
+- Debug icons.
 
 ## License
 
