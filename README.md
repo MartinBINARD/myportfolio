@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #42**
+**Main branch - Commit #43**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update package.json.
+- Modify expand icon.
 
 ## License
 
