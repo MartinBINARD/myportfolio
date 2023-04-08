@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #41**
+**Main branch - Commit #42**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Remove CSP Bugs.
+- Update package.json.
 
 ## License
 
