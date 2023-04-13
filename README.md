@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #46**
+**Main branch - Commit #47**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Add secondary color to expand icon.
+- Update portfolio and CVs.
 
 ## License
 

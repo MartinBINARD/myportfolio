@@ -11,13 +11,12 @@ export function toggleLanguage() {
       aboutRight: "me",
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " about me",
-      aboutDescription:
-        "After created my last project, a social private network using VueJS, NodeJS, Sequelize and MySQL. I would like to bring my expertise in VueJs and deepen my skills in TDD.",
-      frontendTitle: "Frontend VueJS, Javascript framework, HTML, CSS, SASS",
+      aboutDescription: "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and deepen my web security skills acquired during my last experience.",
+      frontendTitle: "Frontend Quasar, VueJS framework",
       frontendDescription:
-        "I'm able to create reactive and dymanic applications with Javascript framework such as VueJS or simple reponsive web pages with HTML, CSS, SASS and vanilla Javascript.",
+        "I contributed to adding functionalities of a reactive and dynamic application with a Javascript framework such as Quasar based on VueJS.",
       backendDescription:
-        "if you need to develop a REST API, i master the framework NodeJS, Express server communicating with MongoDB or MySQL database through Sequelize library.",
+        "if you need to develop a REST API, i master the framework NodeJS, Express server with MongoDB or MySQL database through Sequelize library.",
       linuxTitle: "Linux environments, Arch linux, Debian",
       linuxDescription:
         "I'm familiar with UNIX commands and use a Linux Arch-based distribution on my daily computer.",
@@ -59,12 +58,12 @@ export function toggleLanguage() {
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " me concernant",
       aboutDescription:
-        "Après avoir créé mon dernier projet, un réseau social privé utilisant VueJS, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et approfondir mes compétences en TDD.",
-      frontendTitle: "Frontend VueJS, framework Javascript, HTML, CSS, SASS",
+        "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et approfondir mes compétences en sécurité web acquises au cours de ma dernière expérience.",
+      frontendTitle: "Frontend Quasar, VueJS framework Javascript",
       frontendDescription:
-        "Je suis capable de créer des applications réactives et dynamiques avec un framework Javascript tel que VueJS ou de simples pages web réactives avec HTML, CSS, SASS et Javascript natif.",
+        "J'ai contribué à l'ajout de fonctionnalités d'une application réactive et dynamique avec un framework Javascript tel que Quasar basé sur VueJS.",
       backendDescription:
-        "Si vous avez besoin de développer une API REST, je maîtrise le framework NodeJS, serveur Express communiquant avec la base de données MongoDB ou MySQL via la librairie Sequelize.",
+        "Si vous avez besoin de développer une API REST, je maîtrise le framework NodeJS, serveur Express avec une base de données MongoDB ou MySQL via la librairie Sequelize.",
       linuxTitle: "Environnements Linux, Arch linux, Debian",
       linuxDescription:
         "Je connais les commandes UNIX et j'utilise quotidiennement une distribution basée sur Arch Linux sur mon ordinateur.",

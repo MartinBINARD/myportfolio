@@ -1,7 +1,8 @@
 .about-container {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  padding: 3.5rem 0 5rem;
+  grid-template-rows: 0.5fr 1fr;
+  // margin-top: 2rem;
+  padding: 2rem 0 4rem;
   .left-about {
     padding-right: 1rem;
     max-width: 70rem;
@@ -28,7 +29,7 @@
       padding: 2rem;
 	    outline: var(--color-secondary);
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         transition: all 0.3s ease-in-out;
         padding: 1rem 0;
       }
