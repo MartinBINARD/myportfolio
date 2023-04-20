@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #47**
+**Main branch - Commit #48**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update portfolio and CVs.
+- Update packages.
 
 ## License
 
