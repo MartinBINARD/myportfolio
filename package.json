@@ -11,9 +11,9 @@
   "author": "Martin Binard",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
@@ -21,11 +21,11 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.1",
     "regenerator-runtime": "^0.13.11",
-    "sass": "^1.62.0",
+    "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
-    "webpack": "^5.80.0",
-    "webpack-cli": "^5.0.1",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2",
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
