@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #50**
+**Main branch - Commit #51**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update packages and add french resume.
+- Update npm packages.
 
 ## License
 
