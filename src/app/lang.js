@@ -19,7 +19,7 @@ export function toggleLanguage() {
         "if you need to develop a REST API, i master the framework NodeJS, Express server with MongoDB or MySQL database through Sequelize library.",
       linuxTitle: "Linux environments, Arch linux, Debian",
       linuxDescription:
-        "I'm familiar with UNIX commands and use a Linux Arch-based distribution on my daily computer.",
+        "I'm familiar with UNIX commands and use a Linux distribution on my daily computer.",
       portfolioTitleLeft: "My ",
       groupomaniaTitle: "Secure Social Network",
       groupomaniaDescription:
@@ -66,7 +66,7 @@ export function toggleLanguage() {
         "Si vous avez besoin de développer une API REST, je maîtrise le framework NodeJS, serveur Express avec une base de données MongoDB ou MySQL via la librairie Sequelize.",
       linuxTitle: "Environnements Linux, Arch linux, Debian",
       linuxDescription:
-        "Je connais les commandes UNIX et j'utilise quotidiennement une distribution basée sur Arch Linux sur mon ordinateur.",
+        "Je connais les commandes UNIX et j'utilise quotidiennement une distribution Linux sur mon ordinateur.",
       portfolioTitleLeft: "Mon ",
       groupomaniaTitle: "Réseau social sécurisé",
       groupomaniaDescription:
