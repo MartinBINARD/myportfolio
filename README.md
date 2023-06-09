@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #52**
+**Main branch - Commit #53**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update npm packages and content.
+- Update npm packages.
 
 ## License
 
