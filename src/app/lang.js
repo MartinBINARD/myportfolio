@@ -11,7 +11,8 @@ export function toggleLanguage() {
       aboutRight: "me",
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " about me",
-      aboutDescription: "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and deepen my web security skills acquired during my last experience.",
+      aboutDescription:
+        "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and deepen my web security skills acquired during my last experience.",
       frontendTitle: "Frontend Quasar, VueJS framework",
       frontendDescription:
         "I contributed to adding functionalities of a reactive and dynamic application with a Javascript framework such as Quasar based on VueJS.",
@@ -125,7 +126,7 @@ export function toggleLanguage() {
     document.querySelector("#groupomania-title").textContent =
       language.fr.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
-        language.fr.groupomaniaDescription;
+      language.fr.groupomaniaDescription;
     document.querySelector("#contact-title-left").textContent =
       language.fr.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
@@ -207,9 +208,10 @@ export function toggleLanguage() {
   }
   const english = document.querySelector("#english");
   const french = document.querySelector("#french");
-  const selectedLanguage = document.querySelector(".lang-selected");
+  const buttonSelectedLanguage = document.querySelector(".lang-selected");
   const activeLanguage = document.querySelector(".active-item-lang");
-  let toggleLang;
+  let toggleLang = false;
+  const body = document.querySelector("body");
   const menuLanguage = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
   const resumeLink = document.querySelector("#resume-link");
@@ -232,28 +234,34 @@ export function toggleLanguage() {
     resumeLink.href = frenchResume;
     localStorage.setItem("selectedLanguage", "french");
     setFrenchContent();
-  } else if (localStorage.getItem("selectedLanguage") === "english") {
+  }
+
+  if (localStorage.getItem("selectedLanguage") === "english") {
     french.classList.remove("active-lang");
     english.classList.add("active-lang");
     resumeLink.href = englishResume;
     localStorage.setItem("selectedLanguage", "english");
     setEnglishContent();
-  } else if (
-    navigator.language !== "fr" ||
-    navigator.language !== "fr-FR" ||
-    navigator.language !== "fr-CA" ||
-    navigator.language !== "fr-BE" ||
-    navigator.language !== "fr-CH" ||
-    navigator.language !== "fr-PF"
-  ) {
-    console.log("No language selected !");
   }
-  // open and close dropdown menu
-  selectedLanguage.addEventListener("click", toggleLangDropDown);
+  // open and close dropdown menu when click on button
+  buttonSelectedLanguage.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleLangDropDown();
+  });
   // close dropdown when language is selected
   blockMenudLanguage.forEach((li) =>
-    li.addEventListener("click", toggleLangDropDown)
+    li.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleLangDropDown();
+    })
   );
+
+  // close dropdown menu when click outside of menu
+  body.addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeLangDropDown();
+  });
+
   // select language and load content
   blockMenudLanguage.forEach((li) =>
     li.addEventListener("click", function () {
@@ -283,6 +291,13 @@ export function toggleLanguage() {
       menuLanguage.style.height = `${menuLanguage.scrollHeight}px`;
       toggleLang = true;
     } else {
+      menuLanguage.style.height = 0;
+      toggleLang = false;
+    }
+  }
+
+  function closeLangDropDown() {
+    if (toggleLang) {
       menuLanguage.style.height = 0;
       toggleLang = false;
     }

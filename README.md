@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #59**
+**Main branch - Commit #60**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update npm packages.
+- Fix close menu when clicking outside.
 
 ## License
 
