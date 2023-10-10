@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #60**
+**Main branch - Commit #61**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Fix close menu when clicking outside.
+- Update packages.
 
 ## License
 
