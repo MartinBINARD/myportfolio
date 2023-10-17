@@ -62,6 +62,7 @@
 }
 
 .lang-menu {
+  z-index: 10;
   position: fixed;
   overflow: hidden;
   width: max-content;
@@ -81,19 +82,21 @@
   .img-selected {
     display: none;
   }
-  .lang-selected, .lang {
+  .lang-selected,
+  .lang {
     cursor: pointer;
   }
   .lang-selected {
     display: flex;
-    
   }
-  .lang-selected, .lang {
+  .lang-selected,
+  .lang {
     margin: 4px 0;
     padding: 3px;
     border-radius: 2px;
   }
-  .lang, .active-lang {
+  .lang,
+  .active-lang {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +109,8 @@
     height: 0;
     .lang {
       outline: inherit;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: var(--color-grey-2);
       }
     }
