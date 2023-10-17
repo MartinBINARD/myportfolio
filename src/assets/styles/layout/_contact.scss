@@ -26,9 +26,8 @@
         .icon {
           display: grid;
           grid-template-columns: 40px 1fr;
-          .icon-mail {
-            display: flex;
-            align-items: center;
+          .icon-mail,
+          .icon-language {
             font-size: 1.5rem;
           }
         }
@@ -47,7 +46,8 @@
           border-radius: 50%;
           margin: 0 0.4rem;
           transition: all 0.3s ease-in-out;
-          g, path {
+          g,
+          path {
             fill: var(--color-white);
           }
           span {
@@ -55,7 +55,8 @@
           }
           &:hover {
             background-color: var(--color-secondary);
-            .social-svg g, path {
+            .social-svg g,
+            path {
               fill: var(--color-primary);
             }
             .span {

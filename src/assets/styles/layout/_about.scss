@@ -1,7 +1,6 @@
 .about-container {
   display: grid;
   grid-template-rows: 0.5fr 1fr;
-  // margin-top: 2rem;
   padding: 2rem 0 4rem;
   .left-about {
     padding-right: 1rem;
@@ -27,7 +26,7 @@
       transition: all 0.3s ease-in-out;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
       padding: 2rem;
-	    outline: var(--color-secondary);
+      outline: var(--color-secondary);
       h4 {
         font-size: 1.4rem;
         transition: all 0.3s ease-in-out;
@@ -36,7 +35,8 @@
       p {
         line-height: 2rem;
       }
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         cursor: default;
         transform: translateY(-5px);
         border: 1px solid var(--color-secondary);

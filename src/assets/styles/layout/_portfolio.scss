@@ -72,7 +72,8 @@
               fill: var(--color-white);
             }
           }
-          &:hover, &:focus {
+          &:hover,
+          &:focus {
             background-color: var(--color-white);
             .icons-svg g {
               fill: var(--color-primary);

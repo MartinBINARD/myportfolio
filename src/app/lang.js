@@ -3,7 +3,7 @@ export function toggleLanguage() {
     eng: {
       greeting: "Hi, I'm",
       myDescriptionLeft:
-        "I'm Javascript Web Developer mainly focused on interface of website in ",
+        "I'm a Frontend Web Developer mainly skilled in Javascript frameworks, ",
       myDescriptionRight:
         " and also having skills in NodeJS and Express server.",
       download: "Download CV",
@@ -12,15 +12,15 @@ export function toggleLanguage() {
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " about me",
       aboutDescription:
-        "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and deepen my web security skills acquired during my last experience.",
-      frontendTitle: "Frontend Quasar, VueJS framework",
+        "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and React in TypeScript and deepen my frontend skills",
+      frontendTitle: "Frontend React VueJS & Quasar Javascript framework",
       frontendDescription:
-        "I contributed to adding functionalities of a reactive and dynamic application with a Javascript framework such as Quasar based on VueJS.",
+        "I contributed to adding functionalities of a reactive and dynamic application with a Javascript framework such as Quasar based on VueJS. I'm proficient in React with the use of TypeScript and Redux.",
       backendDescription:
         "if you need to develop a REST API, i master the framework NodeJS, Express server with MongoDB or MySQL database through Sequelize library.",
-      linuxTitle: "Linux environments, Arch linux, Debian",
+      linuxTitle: "Linux environments and git in command line",
       linuxDescription:
-        "I'm familiar with UNIX commands and use a Linux distribution on my daily computer.",
+        "I'm familiar with UNIX commands and use a Linux distribution on my daily computer. I'm able to use Git and Github using the command line in collaborative project.",
       portfolioTitleLeft: "My ",
       groupomaniaTitle: "Secure Social Network",
       groupomaniaDescription:
@@ -50,7 +50,7 @@ export function toggleLanguage() {
     fr: {
       greeting: "Bonjour, je suis",
       myDescriptionLeft:
-        "Je suis Développeur Web Javascript principalement axé sur l'interface de site Web en ",
+        "Je suis un développeur Web Frontend principalement compétent dans les frameworks Javascript, ",
       myDescriptionRight:
         " et j'ai aussi des compétences en NodeJS et serveur Express.",
       download: "Télécharger le CV",
@@ -59,15 +59,15 @@ export function toggleLanguage() {
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " me concernant",
       aboutDescription:
-        "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et approfondir mes compétences en sécurité web acquises au cours de ma dernière expérience.",
-      frontendTitle: "Frontend Quasar, VueJS framework Javascript",
+        "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et React en TypeScript et approfondir mes compétences frontend.",
+      frontendTitle: "Frontend React VueJS & Quasar framework Javascript",
       frontendDescription:
-        "J'ai contribué à l'ajout de fonctionnalités d'une application réactive et dynamique avec un framework Javascript tel que Quasar basé sur VueJS.",
+        "J'ai contribué à l'ajout de fonctionnalités d'une application réactive et dynamique avec un framework Javascript tel que Quasar basé sur VueJS. Je maîtrise React en utilisant TypeScript et Redux.",
       backendDescription:
         "Si vous avez besoin de développer une API REST, je maîtrise le framework NodeJS, serveur Express avec une base de données MongoDB ou MySQL via la librairie Sequelize.",
-      linuxTitle: "Environnements Linux, Arch linux, Debian",
+      linuxTitle: "Environnements Linux et git en ligne de commande",
       linuxDescription:
-        "Je connais les commandes UNIX et j'utilise quotidiennement une distribution Linux sur mon ordinateur.",
+        "Je connais les commandes UNIX et j'utilise une distribution Linux sur mon ordinateur quotidien. Je peux utiliser Git et Github en utilisant la ligne de commande dans un projet collaboratif.",
       portfolioTitleLeft: "Mon ",
       groupomaniaTitle: "Réseau social sécurisé",
       groupomaniaDescription:

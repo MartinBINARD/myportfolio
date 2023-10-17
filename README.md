@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #61**
+**Main branch - Commit #62**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update packages.
+- Update packages & Add React & TypeScript skills.
 
 ## License
 
