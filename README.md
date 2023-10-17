@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #62**
+**Main branch - Commit #63**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update packages & Add React & TypeScript skills.
+- Add VueJS skills in portfolio skills.
 
 ## License
 
