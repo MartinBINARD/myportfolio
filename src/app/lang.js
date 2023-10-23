@@ -12,7 +12,7 @@ export function toggleLanguage() {
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " about me",
       aboutDescription:
-        "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and React in TypeScript and deepen my frontend skills",
+        "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and React with TypeScript and deepen my frontend skills",
       frontendTitle: "Frontend React VueJS & Quasar Javascript framework",
       frontendDescription:
         "I contributed to adding functionalities of a reactive and dynamic application with a Javascript framework such as Quasar based on VueJS. I'm proficient in React with the use of TypeScript and Redux.",
@@ -22,9 +22,14 @@ export function toggleLanguage() {
       linuxDescription:
         "I'm familiar with UNIX commands and use a Linux distribution on my daily computer. I'm able to use Git and Github using the command line in collaborative project.",
       portfolioTitleLeft: "My ",
+      cachetrekTitle: "Geocaching app",
+      cachetrekDescription: "CacheTrek, a fun geocaching game app...",
       groupomaniaTitle: "Secure Social Network",
       groupomaniaDescription:
-        "Groupomania, a private social network with admin privileges and secure database...",
+        "Groupomania, a private social network with admin privileges...",
+      nostromoTitle: "React modele prompt",
+      nostromoDescription:
+        "Nostromo, a React modele prompt with TypeScript, to easily deploy a new project...",
       apiTitle: "REST API for a web application review",
       apiDescription:
         "Using CRUD operations for a gastronomic review application...",
@@ -59,7 +64,7 @@ export function toggleLanguage() {
       aboutSubtitleLeft: "informations",
       aboutSubtitleRight: " me concernant",
       aboutDescription:
-        "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et React en TypeScript et approfondir mes compétences frontend.",
+        "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et React avec TypeScript et approfondir mes compétences frontend.",
       frontendTitle: "Frontend React VueJS & Quasar framework Javascript",
       frontendDescription:
         "J'ai contribué à l'ajout de fonctionnalités d'une application réactive et dynamique avec un framework Javascript tel que Quasar basé sur VueJS. Je maîtrise React en utilisant TypeScript et Redux.",
@@ -69,9 +74,15 @@ export function toggleLanguage() {
       linuxDescription:
         "Je connais les commandes UNIX et j'utilise une distribution Linux sur mon ordinateur quotidien. Je peux utiliser Git et Github en utilisant la ligne de commande dans un projet collaboratif.",
       portfolioTitleLeft: "Mon ",
+      cachetrekTitle: "Application de géocachettes",
+      cachetrekDescription:
+        "CacheTrek, une application de jeu de géocachettes ludique...",
       groupomaniaTitle: "Réseau social sécurisé",
       groupomaniaDescription:
-        "Groupomania, un réseau social privé avec privilèges d'administrateur et base de données sécurisée...",
+        "Groupomania, un réseau social privé avec privilèges d'administrateur...",
+      nostromoTitle: "Invite de commande pour modèle React",
+      nostromoDescription:
+        "Nostromo, un modèle React avec TypeScript, pour déployer facilement un nouveau projet...",
       apiTitle: "API REST pour une revue d'application web",
       apiDescription:
         "Utilisation des opérations CRUD pour une application de revue gastronomique...",
@@ -123,10 +134,18 @@ export function toggleLanguage() {
       language.fr.linuxDescription;
     document.querySelector("#portfolio-title-left").textContent =
       language.fr.portfolioTitleLeft;
+    document.querySelector("#cachetrek-title").textContent =
+      language.fr.cachetrekTitle;
+    document.querySelector("#cachetrek-description").textContent =
+      language.fr.cachetrekDescription;
     document.querySelector("#groupomania-title").textContent =
       language.fr.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
       language.fr.groupomaniaDescription;
+    document.querySelector("#nostromo-title").textContent =
+      language.fr.nostromoTitle;
+    document.querySelector("#nostromo-description").textContent =
+      language.fr.nostromoDescription;
     document.querySelector("#contact-title-left").textContent =
       language.fr.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
@@ -179,10 +198,18 @@ export function toggleLanguage() {
       language.eng.linuxDescription;
     document.querySelector("#portfolio-title-left").textContent =
       language.eng.portfolioTitleLeft;
+    document.querySelector("#cachetrek-title").textContent =
+      language.eng.cachetrekTitle;
+    document.querySelector("#cachetrek-description").textContent =
+      language.eng.cachetrekDescription;
     document.querySelector("#groupomania-title").textContent =
       language.eng.groupomaniaTitle;
     document.querySelector("#groupomania-description").textContent =
       language.eng.groupomaniaDescription;
+    document.querySelector("#nostromo-title").textContent =
+      language.eng.nostromoTitle;
+    document.querySelector("#nostromo-description").textContent =
+      language.eng.nostromoDescription;
     document.querySelector("#contact-title-left").textContent =
       language.eng.contactTitleLeft;
     document.querySelector("#contact-title-right").textContent =
