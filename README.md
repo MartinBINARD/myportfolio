@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #64**
+**Main branch - Commit #67**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Add z-index on language menu.
+- Add new resumes and npm packages.
 
 ## License
 

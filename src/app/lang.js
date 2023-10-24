@@ -13,7 +13,7 @@ export function toggleLanguage() {
       aboutSubtitleRight: " about me",
       aboutDescription:
         "After contributing to the development of Archibald software under Quasar, Vuetify, NodeJS, Sequelize and MySQL. I want to bring my expertise in VueJs and React with TypeScript and deepen my frontend skills",
-      frontendTitle: "Frontend React VueJS & Quasar Javascript framework",
+      frontendTitle: "Frontend React VueJS & Quasar Javascript frameworks",
       frontendDescription:
         "I contributed to adding functionalities of a reactive and dynamic application with a Javascript framework such as Quasar based on VueJS. I'm proficient in React with the use of TypeScript and Redux.",
       backendDescription:
@@ -24,7 +24,7 @@ export function toggleLanguage() {
       portfolioTitleLeft: "My ",
       cachetrekTitle: "Geocaching app",
       cachetrekDescription: "CacheTrek, a fun geocaching game app...",
-      groupomaniaTitle: "Secure Social Network",
+      groupomaniaTitle: "Private Social Network",
       groupomaniaDescription:
         "Groupomania, a private social network with admin privileges...",
       nostromoTitle: "React modele prompt",
@@ -65,7 +65,7 @@ export function toggleLanguage() {
       aboutSubtitleRight: " me concernant",
       aboutDescription:
         "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et React avec TypeScript et approfondir mes compétences frontend.",
-      frontendTitle: "Frontend React VueJS & Quasar framework Javascript",
+      frontendTitle: "Frontend React VueJS & Quasar frameworks Javascript",
       frontendDescription:
         "J'ai contribué à l'ajout de fonctionnalités d'une application réactive et dynamique avec un framework Javascript tel que Quasar basé sur VueJS. Je maîtrise React en utilisant TypeScript et Redux.",
       backendDescription:
@@ -77,7 +77,7 @@ export function toggleLanguage() {
       cachetrekTitle: "Application de géocachettes",
       cachetrekDescription:
         "CacheTrek, une application de jeu de géocachettes ludique...",
-      groupomaniaTitle: "Réseau social sécurisé",
+      groupomaniaTitle: "Réseau social privé",
       groupomaniaDescription:
         "Groupomania, un réseau social privé avec privilèges d'administrateur...",
       nostromoTitle: "Invite de commande pour modèle React",
@@ -242,8 +242,10 @@ export function toggleLanguage() {
   const menuLanguage = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
   const resumeLink = document.querySelector("#resume-link");
-  const englishResume = "assets/img/CV-BINARD_Martin_Web_Developer.jpg";
-  const frenchResume = "assets/img/CV_BINARD_Martin_Développeur_Web.jpg";
+  const englishResume =
+    "assets/img/CV_Martin_Binard_Front-end_Web_Developer.jpg";
+  const frenchResume =
+    "assets/img/CV_Martin_Binard_Développeur_Web_Front-end.jpg";
   // check if already visited and selected to a specific language
   // No need to reload English content if french has never been selected.
   // No subdomain for french content.
