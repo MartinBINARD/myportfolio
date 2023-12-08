@@ -65,12 +65,12 @@
         }
         &::before {
           background-color: var(--color-primary);
-          animation: typing 4s 2s steps(14) forwards;
+          animation: typing 1s 0.5s steps(14) forwards;
         }
         &::after {
           width: 4px;
           background-color: var(--color-secondary);
-          animation: typing 4s 2s steps(14) forwards,
+          animation: typing 1s 0.5s steps(14) forwards,
             blink 750ms steps(14) infinite;
         }
       }
