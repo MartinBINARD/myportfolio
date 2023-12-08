@@ -9,7 +9,7 @@ section {
 
 .section {
   transform: translateY(-100%) scale(0);
-  transition: all 0.3s ease-in-out;
+  transition: all var(--time-transition) ease-in-out;
   background-color: var(--color-primary);
   .french-content {
     display: none;
@@ -29,7 +29,7 @@ section {
 
 .active {
   display: block;
-  animation: scaleAnim 1s ease-in-out;
+  animation: scaleAnim 0.7s ease-in-out;
   @keyframes scaleAnim {
     0% {
       transform: translateY(-100%) scaleY(0);

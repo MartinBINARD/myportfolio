@@ -1,6 +1,6 @@
 # My portfolio
 
-**Main branch - Commit #69**
+**Main branch**
 
 ## Website link
 
@@ -13,7 +13,7 @@
 
 ## Change done
 
-- Update packages.
+- Change color constrast of buttons and links + Reduce time transition to 0.2s.
 
 ## License
 

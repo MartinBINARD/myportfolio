@@ -23,13 +23,13 @@
     .skills-item {
       border: 1px solid var(--color-grey-5);
       border-radius: 5px;
-      transition: all 0.3s ease-in-out;
+      transition: all var(--time-transition) ease-in-out;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
       padding: 2rem;
       outline: var(--color-secondary);
       h4 {
         font-size: 1.4rem;
-        transition: all 0.3s ease-in-out;
+        transition: all var(--time-transition) ease-in-out;
         padding: 1rem 0;
       }
       p {

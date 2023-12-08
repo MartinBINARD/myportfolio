@@ -45,23 +45,16 @@
           height: 50px;
           border-radius: 50%;
           margin: 0 0.4rem;
-          transition: all 0.3s ease-in-out;
+          transition: all var(--time-transition) ease-in-out;
           g,
           path {
-            fill: var(--color-white);
+            fill: var(--color-grey-0);
           }
           span {
-            color: var(--color-white);
+            color: var(--color-grey-0);
           }
           &:hover {
             background-color: var(--color-secondary);
-            .social-svg g,
-            path {
-              fill: var(--color-primary);
-            }
-            .span {
-              color: var(--color-primary);
-            }
           }
           .social-svg {
             height: 1.2rem;
