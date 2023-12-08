@@ -30,7 +30,7 @@
   }
   .active-btn {
     background-color: var(--color-secondary);
-    transition: all 0.3s ease-in-out;
+    transition: all var(--time-transition) ease-in-out;
     .control__icon {
       color: var(--color-grey-0);
     }
@@ -105,7 +105,7 @@
     margin-right: 5px;
   }
   .bloc-links {
-    transition: height 0.2s ease-in-out;
+    transition: height var() ease-in-out;
     height: 0;
     .lang {
       outline: inherit;
