@@ -19,46 +19,78 @@ function setSpeech(languageParagraphs, languageForm) {
   setTextContent(languageParagraphs);
 }
 
-export function toggleLanguage() {
+function toggleLanguageButtonClass(classLanguage) {
   const english = document.querySelector("#english");
   const french = document.querySelector("#french");
+
+  if (classLanguage === "french") {
+    english.classList.remove("active-lang");
+    french.classList.add("active-lang");
+  }
+
+  if (classLanguage === "english") {
+    french.classList.remove("active-lang");
+    english.classList.add("active-lang");
+  }
+}
+
+function toggleResume(language) {
+  const resumeLink = document.querySelector("#resume-link");
+  const englishResume =
+    "assets/img/CV_Martin_Binard_Front-end_Web_Developer.jpg";
+  const frenchResume =
+    "assets/img/CV_Martin_Binard_Développeur_Web_Front-end.jpg";
+
+  if (language === "french") {
+    resumeLink.href = frenchResume;
+  }
+
+  if (language === "english") {
+    resumeLink.href = englishResume;
+  }
+}
+
+function translateFrench() {
+  localStorage.setItem("selectedLanguage", "french");
+  toggleResume("french");
+
+  setSpeech(frenchParagraphs, frenchForm);
+}
+
+function translateEnglish() {
+  localStorage.setItem("selectedLanguage", "english");
+  toggleResume("english");
+
+  setSpeech(englishParagraphs, englishForm);
+}
+
+function detectLanguageBrowser() {
+  if (
+    localStorage.getItem("selectedLanguage") === "french" ||
+    navigator.language === "fr"
+  ) {
+    toggleLanguageButtonClass("french");
+    translateFrench();
+  }
+
+  if (localStorage.getItem("selectedLanguage") === "english") {
+    toggleLanguageButtonClass("english");
+    translateEnglish();
+  }
+}
+
+export function toggleLanguage() {
   const buttonSelectedLanguage = document.querySelector(".lang-selected");
   const activeLanguage = document.querySelector(".active-item-lang");
   let toggleLang = false;
   const body = document.querySelector("body");
   const menuLanguage = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
-  const resumeLink = document.querySelector("#resume-link");
-  const englishResume =
-    "assets/img/CV_Martin_Binard_Front-end_Web_Developer.jpg";
-  const frenchResume =
-    "assets/img/CV_Martin_Binard_Développeur_Web_Front-end.jpg";
+
   // check if already visited and selected to a specific language
   // No need to reload English content if french has never been selected.
   // No subdomain for french content.
-  if (
-    localStorage.getItem("selectedLanguage") === "french" ||
-    navigator.language === "fr" ||
-    navigator.language === "fr-FR" ||
-    navigator.language === "fr-CA" ||
-    navigator.language === "fr-BE" ||
-    navigator.language === "fr-CH" ||
-    navigator.language === "fr-PF"
-  ) {
-    english.classList.remove("active-lang");
-    french.classList.add("active-lang");
-    resumeLink.href = frenchResume;
-    localStorage.setItem("selectedLanguage", "french");
-    setSpeech(frenchParagraphs, frenchForm);
-  }
-
-  if (localStorage.getItem("selectedLanguage") === "english") {
-    french.classList.remove("active-lang");
-    english.classList.add("active-lang");
-    resumeLink.href = englishResume;
-    localStorage.setItem("selectedLanguage", "english");
-    setSpeech(englishParagraphs, englishForm);
-  }
+  detectLanguageBrowser();
   // open and close dropdown menu when click on button
   buttonSelectedLanguage.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -88,13 +120,9 @@ export function toggleLanguage() {
       document.getElementById(li.dataset.id).classList.add("active-lang");
       // display country selected in localstorage
       if (li.dataset.id === "french") {
-        localStorage.setItem("selectedLanguage", "french");
-        resumeLink.href = frenchResume;
-        setSpeech(frenchParagraphs, frenchForm);
+        translateFrench();
       } else if (li.dataset.id === "english") {
-        localStorage.setItem("selectedLanguage", "english");
-        resumeLink.href = englishResume;
-        setSpeech(englishParagraphs, englishForm);
+        translateEnglish();
       } else {
         return false;
       }
