@@ -79,67 +79,64 @@ function detectLanguageBrowser() {
   }
 }
 
-function closeLanguageMenu(isOpen, menu) {
+function closeLanguageMenu(menu) {
   menu.style.height = 0;
-  isOpen = false;
 }
 
-function openLanguageMenu(isOpen, menu) {
+function openLanguageMenu(menu) {
   menu.style.height = `${menu.scrollHeight}px`;
-  isOpen = true;
 }
 
-function toggleLanguageMenu(isOpen, menu) {
-  if (isOpen) {
-    closeLanguageMenu(isOpen, menu);
+function toggleLanguageMenu(menu) {
+  if (menu.style.height === `${menu.scrollHeight}px`) {
+    closeLanguageMenu(menu);
   } else {
-    openLanguageMenu(isOpen, menu);
+    openLanguageMenu(menu);
   }
 }
 
 export function toggleLanguage() {
   const body = document.querySelector("body");
-  const buttonSelectedLanguage = document.querySelector(".lang-selected");
-  const activeLanguage = document.querySelector(".active-item-lang");
-  let isOpen = false;
+  const menuButton = document.querySelector(".lang-selected");
+  const menuButtonActiveFlag = document.querySelector(".active-item-lang");
   const menu = document.querySelector(".bloc-links");
-  const blockMenudLanguage = document.querySelectorAll(".lang");
+  const menuItems = document.querySelectorAll(".lang");
 
   // check if already visited and selected to a specific language
   // No need to reload English content if french has never been selected.
   // No subdomain for french content.
   detectLanguageBrowser();
   // open and close dropdown menu when click on button
-  buttonSelectedLanguage.addEventListener("click", (e) => {
+  menuButton.addEventListener("click", (e) => {
     e.stopPropagation();
-    toggleLanguageMenu(isOpen, menu);
+    toggleLanguageMenu(menu);
   });
   // close dropdown when language is selected
-  blockMenudLanguage.forEach((li) =>
-    li.addEventListener("click", (e) => {
+  menuItems.forEach((item) =>
+    item.addEventListener("click", (e) => {
       e.stopPropagation();
-      closeLanguageMenu(isOpen, menu);
+      closeLanguageMenu(menu);
     })
   );
 
   // close dropdown menu when click outside of menu
   body.addEventListener("click", (e) => {
     e.stopPropagation();
-    closeLanguageMenu(isOpen, menu);
+    closeLanguageMenu(menu);
   });
 
   // select language and load content
-  blockMenudLanguage.forEach((li) =>
-    li.addEventListener("click", function () {
-      activeLanguage.classList.remove("active-item-lang");
+  menuItems.forEach((item) =>
+    item.addEventListener("click", function () {
+      menuButtonActiveFlag.classList.remove("active-item-lang");
       this.classList.add("active-item-lang");
       // display country flag selected
       document.querySelector(".active-lang").classList.remove("active-lang");
-      document.getElementById(li.dataset.id).classList.add("active-lang");
+      document.getElementById(item.dataset.id).classList.add("active-lang");
       // display country selected in localstorage
-      if (li.dataset.id === "french") {
+      if (item.dataset.id === "french") {
         translateFrench();
-      } else if (li.dataset.id === "english") {
+      } else if (item.dataset.id === "english") {
         translateEnglish();
       } else {
         return false;
