@@ -13,16 +13,16 @@ export const frenchSpeech = [
     content: " et j'ai aussi des compétences en NodeJS et serveur Express.",
   },
   {
+    id: "#download",
+    content: "Télécharger le CV",
+  },
+  {
     id: "#about-left",
     content: "A propos de ",
   },
   {
     id: "#about-right",
-    content: "A propos de ",
-  },
-  {
-    id: "#about-subtitle-left",
-    content: "informations",
+    content: "moi",
   },
   {
     id: "#about-subtitle-right",
@@ -116,15 +116,15 @@ export const frenchSpeech = [
     content: "Anglais, Français",
   },
   {
-    id: "email",
+    id: "#input-email",
     content: "Votre email...",
   },
   {
-    id: "name",
+    id: "#input-name",
     content: "Votre Nom & Prénom...",
   },
   {
-    id: "text",
+    id: "#input-message",
     content: "Votre message...",
   },
   {
