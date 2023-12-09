@@ -79,12 +79,30 @@ function detectLanguageBrowser() {
   }
 }
 
+function closeLanguageMenu(isOpen, menu) {
+  menu.style.height = 0;
+  isOpen = false;
+}
+
+function openLanguageMenu(isOpen, menu) {
+  menu.style.height = `${menu.scrollHeight}px`;
+  isOpen = true;
+}
+
+function toggleLanguageMenu(isOpen, menu) {
+  if (isOpen) {
+    closeLanguageMenu(isOpen, menu);
+  } else {
+    openLanguageMenu(isOpen, menu);
+  }
+}
+
 export function toggleLanguage() {
+  const body = document.querySelector("body");
   const buttonSelectedLanguage = document.querySelector(".lang-selected");
   const activeLanguage = document.querySelector(".active-item-lang");
-  let toggleLang = false;
-  const body = document.querySelector("body");
-  const menuLanguage = document.querySelector(".bloc-links");
+  let isOpen = false;
+  const menu = document.querySelector(".bloc-links");
   const blockMenudLanguage = document.querySelectorAll(".lang");
 
   // check if already visited and selected to a specific language
@@ -94,20 +112,20 @@ export function toggleLanguage() {
   // open and close dropdown menu when click on button
   buttonSelectedLanguage.addEventListener("click", (e) => {
     e.stopPropagation();
-    toggleLangDropDown();
+    toggleLanguageMenu(isOpen, menu);
   });
   // close dropdown when language is selected
   blockMenudLanguage.forEach((li) =>
     li.addEventListener("click", (e) => {
       e.stopPropagation();
-      toggleLangDropDown();
+      closeLanguageMenu(isOpen, menu);
     })
   );
 
   // close dropdown menu when click outside of menu
   body.addEventListener("click", (e) => {
     e.stopPropagation();
-    closeLangDropDown();
+    closeLanguageMenu(isOpen, menu);
   });
 
   // select language and load content
@@ -128,22 +146,4 @@ export function toggleLanguage() {
       }
     })
   );
-
-  // toggle dropdown language
-  function toggleLangDropDown() {
-    if (!toggleLang) {
-      menuLanguage.style.height = `${menuLanguage.scrollHeight}px`;
-      toggleLang = true;
-    } else {
-      menuLanguage.style.height = 0;
-      toggleLang = false;
-    }
-  }
-
-  function closeLangDropDown() {
-    if (toggleLang) {
-      menuLanguage.style.height = 0;
-      toggleLang = false;
-    }
-  }
 }
