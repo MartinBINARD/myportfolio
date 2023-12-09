@@ -1,4 +1,4 @@
-export const frenchSpeech = [
+export const frenchParagraphs = [
   {
     id: "#greeting",
     content: "Bonjour, je suis",
@@ -45,7 +45,7 @@ export const frenchSpeech = [
   {
     id: "#backend-description",
     content:
-      "J'ai contribué à l'ajout de fonctionnalités d'une application réactive et dynamique avec un framework Javascript tel que Quasar basé sur VueJS. Je maîtrise React en utilisant TypeScript et Redux.",
+      "Si vous avez besoin de développer une API REST, je maîtrise le framework NodeJS, serveur Express avec une base de données MongoDB ou MySQL via la librairie Sequelize.",
   },
   {
     id: "#linux-title",
@@ -116,19 +116,22 @@ export const frenchSpeech = [
     content: "Anglais, Français",
   },
   {
+    id: "#send-message-btn",
+    content: "Envoyer le message",
+  },
+];
+
+export const frenchForm = [
+  {
     id: "#input-email",
-    content: "Votre email...",
+    placeholder: "Votre email...",
   },
   {
     id: "#input-name",
-    content: "Votre Nom & Prénom...",
+    placeholder: "Votre Nom & Prénom...",
   },
   {
     id: "#input-message",
-    content: "Votre message...",
-  },
-  {
-    id: "#send-message-btn",
-    content: "Envoyer le message",
+    placeholder: "Votre message...",
   },
 ];

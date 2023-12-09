@@ -1,4 +1,4 @@
-export const englishSpeech = [
+export const englishParagraphs = [
   {
     id: "#greeting",
     content: "Hi, I'm",
@@ -115,19 +115,22 @@ export const englishSpeech = [
     content: "English, French",
   },
   {
+    id: "#send-message-btn",
+    content: "Send message",
+  },
+];
+
+export const englishForm = [
+  {
     id: "#input-email",
-    content: "Your email...",
+    placeholder: "Your email...",
   },
   {
     id: "#input-name",
-    content: "Your Lastname & Firstname...",
+    placeholder: "Your Lastname & Firstname...",
   },
   {
     id: "#input-message",
-    content: "Your message...",
-  },
-  {
-    id: "#send-message-btn",
-    content: "Send message",
+    placeholder: "Your message...",
   },
 ];
