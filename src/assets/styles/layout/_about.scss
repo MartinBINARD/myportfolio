@@ -35,6 +35,11 @@
       p {
         line-height: 2rem;
       }
+      .logo,
+      #vuejs path:last-child,
+      #bash path:last-child {
+        fill: var(--color-secondary);
+      }
       &:hover,
       &:focus {
         cursor: default;
@@ -45,11 +50,17 @@
           color: var(--color-secondary);
         }
       }
-      .icons {
-        text-align: center;
-        .logo {
+      .icons,
+      .container {
+        display: flex;
+        justify-content: center;
+        .logo,
+        .container {
           height: 2rem;
-          margin: 0 1rem;
+          width: 2rem;
+        }
+        .container {
+          margin: 0 2rem;
         }
       }
     }
