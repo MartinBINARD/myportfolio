@@ -64,6 +64,16 @@ function translateEnglish() {
   setSpeech(englishParagraphs, englishForm);
 }
 
+function setTranslation(language) {
+  if (language === "french") {
+    translateFrench();
+  }
+
+  if (language === "english") {
+    translateEnglish();
+  }
+}
+
 function detectLanguageBrowser() {
   if (
     localStorage.getItem("selectedLanguage") === "french" ||
@@ -102,26 +112,28 @@ function onClickMenuButton(button, menuContainer) {
   });
 }
 
-function onClickMenuItems(menuItems, menuContainer) {
-  const menuButtonActive = document.querySelector(".active-item-lang");
-  const menuItemActive = document.querySelector(".active-lang");
+function setButtonActiveClass(id) {
+  const menuButtonActive = document.querySelector(".active-lang");
+  const languageSelected = document.getElementById(id);
 
+  menuButtonActive.classList.remove("active-lang");
+  languageSelected.classList.add("active-lang");
+}
+
+function setMenuItemActiveClass(item) {
+  const menuItemActive = document.querySelector(".active-item-lang");
+  menuItemActive.classList.remove("active-item-lang");
+  item.classList.add("active-item-lang");
+}
+
+function onClickMenuItems(menuItems, menuContainer) {
   menuItems.forEach((item) =>
     item.addEventListener("click", function (e) {
       e.stopPropagation();
-      menuButtonActive.classList.remove("active-item-lang");
-      this.classList.add("active-item-lang");
-      // display country flag selected
-      menuItemActive.classList.remove("active-lang");
-      document.getElementById(item.dataset.id).classList.add("active-lang");
-      // display country selected in localstorage
-      if (item.dataset.id === "french") {
-        translateFrench();
-      } else if (item.dataset.id === "english") {
-        translateEnglish();
-      } else {
-        return false;
-      }
+      setMenuItemActiveClass(this);
+      setButtonActiveClass(item.dataset.id);
+
+      setTranslation(item.dataset.id);
       closeLanguageMenu(menuContainer);
     })
   );
