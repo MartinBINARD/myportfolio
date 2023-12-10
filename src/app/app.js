@@ -1,9 +1,9 @@
 import { onClickControlButtons } from "./onClickControlButtons.js";
-import { toggleLightMode } from "./light-mode.js";
+import { handleLightMode } from "./handleLightMode.js";
 import { handleLanguageMenu } from "./lang";
 import { submitBtnLoader } from "./contact-form";
 
 onClickControlButtons();
-toggleLightMode();
+handleLightMode();
 handleLanguageMenu();
 submitBtnLoader();
