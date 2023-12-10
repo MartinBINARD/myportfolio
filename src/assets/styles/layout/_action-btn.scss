@@ -5,10 +5,9 @@
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
-  border-radius: 30px;
   color: inherit;
-  border: 1px solid var(--color-secondary);
-  width: max-content;
+  border-radius: 500px;
+  border: 2px solid var(--color-secondary);
   cursor: pointer;
   .btn-text {
     padding: 0 1.5rem;
@@ -19,7 +18,7 @@
     justify-content: center;
     color: var(--color-grey-0);
     background-color: var(--color-secondary);
-    border-radius: 50%;
+    border-radius: 500px;
     padding: 1rem;
     &__mail {
       font-size: 1.1rem;
