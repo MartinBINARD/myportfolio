@@ -18,11 +18,11 @@ export const frenchParagraphs = [
   },
   {
     id: "#about-left",
-    content: "A propos de ",
+    content: "Mes ",
   },
   {
     id: "#about-right",
-    content: "moi",
+    content: "compétences",
   },
   {
     id: "#about-subtitle-right",
@@ -58,7 +58,11 @@ export const frenchParagraphs = [
   },
   {
     id: "#portfolio-title-left",
-    content: "Mon ",
+    content: "Mes ",
+  },
+  {
+    id: "#portfolio-title-right",
+    content: "projets",
   },
   {
     id: "#cachetrek-title",

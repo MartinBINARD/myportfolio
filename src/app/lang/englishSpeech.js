@@ -18,11 +18,11 @@ export const englishParagraphs = [
   },
   {
     id: "#about-left",
-    content: "About ",
+    content: "My ",
   },
   {
     id: "#about-right",
-    content: "me",
+    content: "skills",
   },
   {
     id: "#about-subtitle-right",
@@ -59,6 +59,10 @@ export const englishParagraphs = [
   {
     id: "#portfolio-title-left",
     content: "My ",
+  },
+  {
+    id: "#portfolio-title-right",
+    content: "projects",
   },
   {
     id: "#cachetrek-title",
