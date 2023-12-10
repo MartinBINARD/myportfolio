@@ -89,11 +89,25 @@ function detectLanguageBrowser() {
   }
 }
 
+function rotateIconClockWise() {
+  const icon = document.querySelector(".btn-expand");
+  icon.classList.remove("rotate-anti-clockwise");
+  icon.classList.add("rotate-clockwise");
+}
+
+function rotateIconAntiClockWise() {
+  const icon = document.querySelector(".btn-expand");
+  icon.classList.remove("rotate-clockwise");
+  icon.classList.add("rotate-anti-clockwise");
+}
+
 function closeLanguageMenu(menu) {
+  rotateIconAntiClockWise();
   menu.style.height = 0;
 }
 
 function openLanguageMenu(menu) {
+  rotateIconClockWise();
   menu.style.height = `${menu.scrollHeight}px`;
 }
 

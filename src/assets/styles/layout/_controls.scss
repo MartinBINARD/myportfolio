@@ -78,6 +78,13 @@
   }
   .btn-expand {
     color: var(--color-secondary);
+    transition: all var(--time-transition) cubic-bezier(0.5, 0, 0, 1);
+  }
+  .rotate-clockwise {
+    transform: rotateZ(180deg);
+  }
+  .rotate-anti-clockwise {
+    transform: rotateZ(0deg);
   }
   .img-selected {
     display: none;
