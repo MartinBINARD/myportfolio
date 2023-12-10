@@ -9,7 +9,7 @@ section {
 
 .section {
   transform: translateY(-100%) scale(0);
-  transition: all var(--time-transition) ease-in-out;
+  transition: all 0.4s cubic-bezier(0.5, 0, 0, 1);
   background-color: var(--color-primary);
   .french-content {
     display: none;
@@ -29,7 +29,7 @@ section {
 
 .active {
   display: block;
-  animation: scaleAnim 0.5s cubic-bezier(0.5, 0, 0, 1);
+  animation: scaleAnim 0.4s cubic-bezier(0.5, 0, 0, 1);
   @keyframes scaleAnim {
     0% {
       opacity: 0;
