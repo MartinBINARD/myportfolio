@@ -95,43 +95,24 @@ function toggleLanguageMenu(menu) {
   }
 }
 
-export function toggleLanguage() {
-  const body = document.querySelector("body");
-  const menuButton = document.querySelector(".lang-selected");
-  const menuButtonActiveFlag = document.querySelector(".active-item-lang");
-  const menu = document.querySelector(".bloc-links");
-  const menuItems = document.querySelectorAll(".lang");
-
-  // check if already visited and selected to a specific language
-  // No need to reload English content if french has never been selected.
-  // No subdomain for french content.
-  detectLanguageBrowser();
-  // open and close dropdown menu when click on button
-  menuButton.addEventListener("click", (e) => {
+function onClickMenuButton(button, menuContainer) {
+  button.addEventListener("click", (e) => {
     e.stopPropagation();
-    toggleLanguageMenu(menu);
+    toggleLanguageMenu(menuContainer);
   });
-  // close dropdown when language is selected
+}
+
+function onClickMenuItems(menuItems, menuContainer) {
+  const menuButtonActive = document.querySelector(".active-item-lang");
+  const menuItemActive = document.querySelector(".active-lang");
+
   menuItems.forEach((item) =>
-    item.addEventListener("click", (e) => {
+    item.addEventListener("click", function (e) {
       e.stopPropagation();
-      closeLanguageMenu(menu);
-    })
-  );
-
-  // close dropdown menu when click outside of menu
-  body.addEventListener("click", (e) => {
-    e.stopPropagation();
-    closeLanguageMenu(menu);
-  });
-
-  // select language and load content
-  menuItems.forEach((item) =>
-    item.addEventListener("click", function () {
-      menuButtonActiveFlag.classList.remove("active-item-lang");
+      menuButtonActive.classList.remove("active-item-lang");
       this.classList.add("active-item-lang");
       // display country flag selected
-      document.querySelector(".active-lang").classList.remove("active-lang");
+      menuItemActive.classList.remove("active-lang");
       document.getElementById(item.dataset.id).classList.add("active-lang");
       // display country selected in localstorage
       if (item.dataset.id === "french") {
@@ -141,6 +122,29 @@ export function toggleLanguage() {
       } else {
         return false;
       }
+      closeLanguageMenu(menuContainer);
     })
   );
+}
+
+function onClickBody(body, menuContainer) {
+  body.addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeLanguageMenu(menuContainer);
+  });
+}
+
+export function handleLanguageMenu() {
+  const body = document.querySelector("body");
+  const menuButton = document.querySelector(".lang-selected");
+  const menuContainer = document.querySelector(".bloc-links");
+  const menuItems = document.querySelectorAll(".lang");
+
+  detectLanguageBrowser();
+
+  onClickMenuButton(menuButton, menuContainer);
+
+  onClickMenuItems(menuItems, menuContainer);
+
+  onClickBody(body, menuContainer);
 }
