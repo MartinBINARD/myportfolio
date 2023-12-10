@@ -1,4 +1,4 @@
-export function submitBtnLoader() {
+export function onClickSubmitLoader() {
   const form = document.forms["form"];
   const submitBtn = document.querySelector("#submit-btn");
 
