@@ -70,9 +70,9 @@
   }
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 1024px), (max-height: 745px) {
   section {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 2.5rem;
   }
   .header-content {
     grid-template-columns: 1fr;
