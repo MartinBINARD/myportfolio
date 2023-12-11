@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 1024px), (max-height: 745px) {
+@media screen and (max-width: 1024px), screen and (max-height: 745px) {
   section {
     padding: 2.5rem 2.5rem;
   }
