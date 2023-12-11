@@ -9,7 +9,8 @@
     position: relative;
     .image {
       border-radius: var(--br-sm-2);
-      height: 45%;
+      height: 27rem;
+      margin-bottom: 3rem;
       background-color: var(--color-black);
       transition: all var(--time-transition) cubic-bezier(0.5, 0, 0, 1);
       border-radius: 53% 47% 18% 82% / 46% 26% 74% 54%;
