@@ -74,11 +74,21 @@ function setTranslation(language) {
   }
 }
 
-function detectLanguageBrowser() {
+function setActiveFrenchMenuItem(menuItemsList) {
+  menuItemsList.forEach((item) => {
+    item.classList.remove("active-item-lang");
+    if (item.dataset.id === "french") {
+      item.classList.add("active-item-lang");
+    }
+  });
+}
+
+function detectLanguageBrowser(menuItemsList) {
   if (
     localStorage.getItem("selectedLanguage") === "french" ||
     navigator.language === "fr"
   ) {
+    setActiveFrenchMenuItem(menuItemsList);
     toggleLanguageButtonClass("french");
     translateFrench();
   }
@@ -140,8 +150,8 @@ function setMenuItemActiveClass(item) {
   item.classList.add("active-item-lang");
 }
 
-function onClickMenuItems(menuItems, menuContainer) {
-  menuItems.forEach((item) =>
+function onClickMenuItems(menuItemsList, menuContainer) {
+  menuItemsList.forEach((item) =>
     item.addEventListener("click", function (e) {
       e.stopPropagation();
       setMenuItemActiveClass(this);
@@ -164,13 +174,13 @@ export function handleLanguageMenu() {
   const body = document.querySelector("body");
   const menuButton = document.querySelector(".lang-selected");
   const menuContainer = document.querySelector(".bloc-links");
-  const menuItems = document.querySelectorAll(".lang");
+  const menuItemsList = document.querySelectorAll(".lang");
 
-  detectLanguageBrowser();
+  detectLanguageBrowser(menuItemsList);
 
   onClickMenuButton(menuButton, menuContainer);
 
-  onClickMenuItems(menuItems, menuContainer);
+  onClickMenuItems(menuItemsList, menuContainer);
 
   onClickBody(body, menuContainer);
 }
