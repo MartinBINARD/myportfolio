@@ -15,4 +15,4 @@
 
 Source code is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
 
-Contents of this site are © Copyright 2022 Martin Binard. All rights reserved.
+Contents of this site are © Copyright 2024 Martin Binard. All rights reserved.
