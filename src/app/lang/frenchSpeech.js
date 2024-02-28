@@ -70,7 +70,7 @@ export const frenchParagraphs = [
   },
   {
     id: "#cachetrek-description",
-    content: "CacheTrek, une application de jeu de géocachettes ludique...",
+    content: "GeoCacheTrek, une application de jeu de géocachettes ludique...",
   },
   {
     id: "#groupomania-title",

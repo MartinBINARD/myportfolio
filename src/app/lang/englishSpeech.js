@@ -70,7 +70,7 @@ export const englishParagraphs = [
   },
   {
     id: "#cachetrek-description",
-    content: "CacheTrek, a fun geocaching game app...",
+    content: "GeoCacheTrek, a fun geocaching game app...",
   },
   {
     id: "#groupomania-title",
