@@ -49,12 +49,12 @@ export const frenchParagraphs = [
   },
   {
     id: "#linux-title",
-    content: "Environnements Linux et git en ligne de commande",
+    content: "Docker, Environnements Linux & Git",
   },
   {
     id: "#linux-description",
     content:
-      "Je connais les commandes UNIX et j'utilise une distribution Linux sur mon ordinateur quotidien. Je peux utiliser Git et Github en utilisant la ligne de commande dans un projet collaboratif.",
+      "J'utilise Docker pour déployer mon application de géocaching. Je connais les commandes UNIX et j'utilise une distribution Linux sur mon ordinateur quotidien. Je peux utiliser Git et Github en utilisant la ligne de commande dans un projet collaboratif.",
   },
   {
     id: "#portfolio-title-left",

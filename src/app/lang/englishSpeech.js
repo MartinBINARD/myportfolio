@@ -49,12 +49,12 @@ export const englishParagraphs = [
   },
   {
     id: "#linux-title",
-    content: "Linux environments and git in command line",
+    content: "Docker, Linux environments & Git",
   },
   {
     id: "#linux-description",
     content:
-      "I'm familiar with UNIX commands and use a Linux distribution on my daily computer. I'm able to use Git and Github using the command line in collaborative project.",
+      "I use Docker to deploy my geocaching app. I'm familiar with UNIX commands and use a Linux distribution on my daily computer. I'm able to use Git and Github using the command line in collaborative project.",
   },
   {
     id: "#portfolio-title-left",

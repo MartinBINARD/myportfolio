@@ -37,7 +37,7 @@
       }
       .logo,
       #vuejs path:last-child,
-      #bash path:last-child {
+      #docker path:last-child {
         fill: var(--color-secondary);
       }
       &:hover,
@@ -58,6 +58,9 @@
         .container {
           height: 2rem;
           width: 2rem;
+        }
+        #docker {
+          transform: scale(1.4);
         }
         .container {
           margin: 0 2rem;
