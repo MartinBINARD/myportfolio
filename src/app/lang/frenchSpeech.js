@@ -31,7 +31,7 @@ export const frenchParagraphs = [
   {
     id: "#about-description",
     content:
-      "Après avoir contribué au développement du logiciel Archibald sous Quasar, Vuetify, NodeJS, Sequelize et MySQL. Je souhaite apporter mon expertise en VueJs et React avec TypeScript et approfondir mes compétences frontend.",
+      "Après avoir contribué au développement du logiciel Archibald et déployé mon propre application web de géocaching, je souhaite apporter mon expertise au sein d'une équipe dynamique.",
   },
   {
     id: "#frontend-title",
