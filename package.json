@@ -1,6 +1,6 @@
 {
   "name": "myportfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A portfolio in vanilla JS only because it does not need more",
   "main": "index.js",
   "scripts": {
