@@ -52,7 +52,7 @@
   .nav__menu {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     background-color: hsla(0, 0%, 10%, .3);
     width: 75%;
     height: 100%;
@@ -61,4 +61,10 @@
     -webkit-backdrop-filter: blur(24px); // For safari
     transition: right .3s;
   }
+}
+
+// Show menu
+
+.show-menu {
+  right: 0;
 }
