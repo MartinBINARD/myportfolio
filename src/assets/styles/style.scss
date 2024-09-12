@@ -1,8 +1,8 @@
 // BASE
 @use "base/responsive-typography";
 @use "base/variables";
-@use "base/reset.scss";
-@use "base/-reusable-css-classes.scss";
+@use "base/base";
+@use "base/reusable-css-classes";
 // LAYOUT
 @use "layout/controls";
 @use "layout/action-btn";
