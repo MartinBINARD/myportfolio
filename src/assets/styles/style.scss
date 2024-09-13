@@ -1,15 +1,16 @@
 // BASE
+// @use "base/typography";
 @use "base/variables";
 @use "base/responsive-typography";
 @use "base/base";
 @use "base/reusable-css-classes";
 // LAYOUT
 @use "layout/header";
-@use "layout/controls";
-@use "layout/action-btn";
-@use "layout/sections";
-@use "layout/about";
-@use "layout/portfolio";
-@use "layout/contact";
+// @use "layout/controls";
+// @use "layout/action-btn";
+// @use "layout/sections";
+// @use "layout/about";
+// @use "layout/portfolio";
+// @use "layout/contact";
 
-@use "utils/media-size";
+// @use "utils/media-size";
