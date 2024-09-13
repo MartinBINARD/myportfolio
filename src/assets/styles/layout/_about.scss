@@ -1,71 +1,20 @@
-.about-container {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr;
-  padding: 2rem 0 4rem;
-  .left-about {
-    padding-right: 1rem;
-    max-width: 70rem;
-    p {
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-      padding: 2rem 1rem;
-      color: var(--color-grey-1);
-    }
-    h4 {
-      font-size: 2rem;
-      text-transform: uppercase;
-    }
+.about {
+  &__container {
+    row-gap: 2.5rem;
   }
-  .right-about {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 7rem;
-    .skills-item {
-      border: 1px solid var(--color-grey-5);
-      border-radius: 5px;
-      transition: all var(--time-transition) ease-in-out;
-      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      outline: var(--color-secondary);
-      h4 {
-        font-size: 1.4rem;
-        transition: all var(--time-transition) ease-in-out;
-        padding: 1rem 0;
-      }
-      p {
-        line-height: 2rem;
-      }
-      .logo,
-      #vuejs path:last-child,
-      #docker path:last-child {
-        fill: var(--color-secondary);
-      }
-      &:hover,
-      &:focus {
-        cursor: default;
-        transform: translateY(-5px);
-        border: 1px solid var(--color-secondary);
-        box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-        h4 {
-          color: var(--color-secondary);
-        }
-      }
-      .icons,
-      .container {
-        display: flex;
-        justify-content: center;
-        .logo,
-        .container {
-          height: 2rem;
-          width: 2rem;
-        }
-        #docker {
-          transform: scale(1.4);
-        }
-        .container {
-          margin: 0 2rem;
-        }
-      }
+  &__data {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: 2rem;
+  }
+  &__image {
+    justify-self: center;
+  }
+  &__blob {
+    width: 320px;
+    path {
+      stroke: var(--first-color)
     }
   }
 }
