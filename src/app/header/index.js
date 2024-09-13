@@ -1,6 +1,6 @@
-import { closeMenuMobile } from "./closeMenuMobile";
+import { closeMenuMobileOnLinkClicked } from "./closeMenuMobileOnLinkClicked";
 import { toggleMenu } from "./toggleMenu";
 export const handleHeaderNavMenu = () => {
   toggleMenu()
-  closeMenuMobile()
+  closeMenuMobileOnLinkClicked()
 }

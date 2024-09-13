@@ -1,4 +1,4 @@
-export const closeMenuMobile = () => {
+export const closeMenuMobileOnLinkClicked = () => {
   const navLinks = document.querySelectorAll('.nav__link');
   
   const linkAction = () => {
