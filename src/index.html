@@ -184,11 +184,11 @@
       <div class="skills__container container grid">
         <div class="skills__data">
           <h3 class="section__subtitle">
-            Compétences <span>Techniques</span>
+            Mes <span>Compétences</span>
           </h3>
 
           <h2 class="section__title">
-            Mes compétences
+            Compétences Techniques
           </h2>
 
           <p class="skills__description">
@@ -256,7 +256,31 @@
     </section>
 
     <section class="contact section" id="contact">
+      <h3 class="section__subtitle">
+        Me <span>contacter</span>
+      </h3>
 
+      <h2 class="section__title">
+        Prendre contact
+      </h2>
+
+      <div class="contact___container container grid">
+        <form action="https://formsubmit.co/7f395459300d1d5c76dd81de23eeab58" method="POST" class="contact__form"
+          id="contact-form">
+          <div class="contact__group">
+            <input type="text" name="name" placeholder="Nom & Prénom" required class="contact__input">
+            <input type="text" name="email" placeholder="Email" required class="contact__input">
+
+            <textarea name="projet" placeholder="Message" required class="contact__input"></textarea>
+
+            <p class="contact__message" id="contact-message"></p>
+
+            <button class="button contact__button">
+              Envoyer le message
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
