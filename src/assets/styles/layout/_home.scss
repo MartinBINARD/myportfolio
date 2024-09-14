@@ -58,7 +58,7 @@
   border-radius: .5rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
-  transition: box-shadow --time-transition;
+  transition: box-shadow var(--time-transition);
   &:hover {
     box-shadow:  0 8px 24px hsla(var(--hue), 100%, 40%, .25);
   }

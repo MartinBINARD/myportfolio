@@ -34,7 +34,7 @@
   &__link {
     color: var(--title-color);
     font-weight: var(--font-medium);
-    transition: color --time-transition;
+    transition: color var(--time-transition);
     &:hover{
       color: var(--first-color);
     }
@@ -59,7 +59,7 @@
     padding: 4.5rem 0 0 3rem;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px); // For safari
-    transition: right --time-transition;
+    transition: right var(--time-transition);
   }
 }
 
