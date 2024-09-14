@@ -1,0 +1,21 @@
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--body-color);
+  padding: 6px;
+  display: inline-flex;
+  border-radius: .25rem;
+  color: var(--first-color);
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+  z-index: var(--z--tooltip);
+  transition: bottom var(--time-transition), transform var(--time-transition);
+  &:hover {
+    transform: translateY(-.25rem);
+  }
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
