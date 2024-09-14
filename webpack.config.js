@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CspHtmlWebpackPlugin = require("csp-html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: path.resolve(__dirname, "src/index.js"),
@@ -57,6 +58,9 @@ module.exports = {
         "https://formsubmit.co/7f395459300d1d5c76dd81de23eeab58",
       ],
       "img-src": ["'self'", "http://www.w3.org/2000/svg"],
+    }),
+    new Dotenv({
+      path: './.env',
     }),
   ],
   stats: "minimal",

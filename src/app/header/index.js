@@ -3,7 +3,7 @@ import { toggleBlurToHeaderOnScroll } from "./toggleBlurToHeaderOnScroll";
 import { toggleMenu } from "./toggleMenu";
 
 export const handleHeaderNavMenu = () => {
-  toggleMenu()
-  closeMenuMobileOnLinkClicked()
-  toggleBlurToHeaderOnScroll()
-}
+  toggleMenu();
+  closeMenuMobileOnLinkClicked();
+  toggleBlurToHeaderOnScroll();
+};
