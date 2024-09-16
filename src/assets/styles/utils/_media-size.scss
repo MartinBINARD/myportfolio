@@ -58,3 +58,130 @@
     order: 1;
   }
 }
+
+// For large devices
+@media screen and (min-width: 1023px) {
+  .section {
+    padding-block: 7rem 2rem;
+  }
+  .section__subtitle {
+    font-size: var(--normal-font-size);
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    &__close,
+    &__toggle {
+      display: none;
+    }
+    &__list {
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+    &__menu {
+      width: initial;
+    }
+    .blur-header::after {
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);  // For safari
+    }
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .container {
+    margin-inline: auto;
+  }
+  .home {
+    &__container {
+      grid-template-columns: 455px 550px;
+      column-gap: 7rem;
+      padding-block: 2rem 3rem;
+    }
+    &__blob{
+      width: 550px;
+    }
+    &__content {
+      row-gap: 4.5rem;
+    }
+    &__description {
+      margin-block: 1.5rem 2.5rem;
+    }
+  }
+  .about {
+    &__container {
+      grid-template-columns: 550px 460px;
+      column-gap: 4.5rem;
+      padding-bottom: 1rem;
+    }
+    &__blob {
+      width: 550px;
+    }
+    &__description {
+      margin-bottom: 3rem;
+    }
+  }
+  .skills {
+    &__container {
+      grid-template-columns: 340px 425px;
+      column-gap: 10rem;
+      padding-bottom: 4rem;
+    }
+    &__description {
+      margin-bottom: 3rem;
+    }
+    &__content {
+      column-gap: 8rem;
+    }
+    &__group {
+      row-gap: 1.5rem;
+    }
+    &__item {
+      font-size: var(--h3-font-size);
+    }
+  }
+  .projects__container {
+      // grid-template-columns: repeat(3, 350px);
+      row-gap: 3rem;
+      padding-block: 2.5rem 4rem;
+  }
+  .contact {
+    &__container {
+      grid-template-columns: 680px;
+      padding-block: 2.5rem 2rem;
+    }
+    &__form {
+      row-gap: 1.5rem;
+      textarea {
+        height: 20rem;
+      }
+    }
+    &__group {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+    &__input {
+      padding: 1.5rem;
+    }
+  }
+  .footer {
+    padding-block: 4.5rem 4rem;
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      text-align: initial;
+    }
+    &__title {
+      font-size: var(--bigger-font-size);
+    }
+    &__social {
+      column-gap: 1.5rem;
+    }
+    &__copy {
+      margin: 0;
+      justify-self: flex-end;
+    }
+  }
+  .scrollup {
+    right: 3rem;
+  }
+}
