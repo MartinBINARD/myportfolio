@@ -49,13 +49,29 @@
   &__links {
     gap: .5rem;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__button {
+    justify-content: space-between;
     align-items: center;
     column-gap: .5rem;
     font-weight: var(--font-medium);
+    box-shadow: 0 0 0 1px var(--container-color);
+    border-radius: .5rem;
+    padding: .3rem .5rem;
+    width: 9rem;
+    transition: all var(--time-transition) cubic-bezier(0.5, 0, 0, 1);
     i {
       font-size: 1.25rem;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 1px var(--first-color);
+      color: var(--title-color);
+      background-color: var(--first-color);
+      .icons-svg g {
+        fill: var(--title-color);
+      }
     }
   }
   &__card:hover &__modal {
