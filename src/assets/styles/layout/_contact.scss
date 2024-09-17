@@ -22,6 +22,10 @@
     &::placeholder {
       color: var(--text-color);
     }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px var(--first-color);
+    }
   }
   &__button {
     justify-self: center;
