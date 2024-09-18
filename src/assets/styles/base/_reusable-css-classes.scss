@@ -36,3 +36,35 @@
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
+
+.button {
+  color: var(--title-color);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.button--outlined {
+  transition: all var(--time-transition) ease;
+  background-color : transparent;
+  border: 3px solid var(--first-color);
+  font-weight: var(--font-medium);
+  font-size: var(--h3-font-size);
+  outline: none;
+  &:hover {
+    color: var(--body-color);
+    background-color: var(--first-color);
+  }
+}
+
+.button--filled {
+  background-color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: box-shadow var(--time-transition);
+  &:hover {
+    box-shadow:  0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+  }
+}
