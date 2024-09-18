@@ -221,55 +221,58 @@
     </section>
 
     <section class="projects section" id="projects">
-      <h3 class="section__subtitle">
-        Mon <span>Projet</span>
-      </h3>
+      <div class="projects__container container grid">
+        <h3 class="section__subtitle">
+          Mon <span>Projet</span>
+        </h3>
 
-      <h2 class="section__title">
-        Projet Récent
-      </h2>
+        <h2 class="section__title">
+          Projet Récent
+        </h2>
 
-      <div class="projects__container grid">
-        <article class="projects__card">
-          <img src="assets/img/geocachetrek.png" alt="projet GéoCacheTrek" class="projects__img">
+        <article class="projects__card" tabindex="0">
+          <div class="projects__image">
+            <img src="assets/img/geocachetrek.png" alt="projet GéoCacheTrek" class="projects__img">
 
-          <div class="projects__modal">
-            <span class="projects__subtitle">
-              Application web de jeu de géocachettes ludique possédant une clean architecture et des tests
-            </span>
+            <a href="https://geocachetrek.online/" class="projects__button button" target="_blank" tabindex="0">
+              Visiter<i data-lucide="chrome" />
+            </a>
+          </div>
 
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Site web</h3>
             <h2 class="projects__title">GeoCacheTrek</h2>
 
-            <div class="projects__links">
-              <a href="https://geocachetrek.online/" class="projects__button" target="_blank" tabindex="0">
-                Visiter <i data-lucide="chrome" />
-              </a>
+            <p class="projects__description">
+              Application web de jeu de géocachettes ludique possédant une clean architecture et des tests
+            </p>
+          </div>
 
-              <a href="https://www.youtube.com/watch?v=1bu4YDkArFo" class="projects__button" target="_blank"
-                tabindex="0">
-                Voir la vidéo <i data-lucide="youtube" />
-              </a>
+          <div class="projects__buttons">
+            <a href="https://www.youtube.com/watch?v=1bu4YDkArFo" class="projects__link" target="_blank" tabindex="0">
+              Voir la vidéo <i data-lucide="youtube" />
+            </a>
 
-              <a href="https://github.com/MartinBINARD/geocaching-front" class="projects__button" target="_blank"
-                tabindex="0">
-                Voir le dépôt <i data-lucide="github" />
-              </a>
-            </div>
+            <a href="https://github.com/MartinBINARD/geocaching-front" class="projects__link" target="_blank"
+              tabindex="0">
+              Voir le dépôt <i data-lucide="github" />
+            </a>
           </div>
         </article>
       </div>
+
     </section>
 
     <section class="contact section" id="contact">
-      <h3 class="section__subtitle">
-        Me <span>contacter</span>
-      </h3>
-
-      <h2 class="section__title">
-        Prendre contact
-      </h2>
-
       <div class="contact__container container grid">
+        <h3 class="section__subtitle">
+          Me <span>contacter</span>
+        </h3>
+
+        <h2 class="section__title">
+          Prendre contact
+        </h2>
+
         <form action="https://formsubmit.co/7f395459300d1d5c76dd81de23eeab58" method="POST" class="contact__form"
           id="contact-form">
           <div class="contact__group">
