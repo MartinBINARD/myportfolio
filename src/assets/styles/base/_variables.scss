@@ -46,6 +46,13 @@
 
   /*========== transition ==========*/
   --time-transition: 0.2s;
+  
+  /*========== spinner ==========*/
+  --spinner-color-95: hsl(228, 8%, 95%);
+  --spinner-color-85: hsl(228, 8%, 85%);
+  --spinner-color-75: hsl(228, 8%, 75%);
+  --spinner-color-65: hsl(228, 8%, 65%);
+
 }
 
 .light-mode {
