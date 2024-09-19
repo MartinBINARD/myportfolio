@@ -1,9 +1,10 @@
-import { onClickControlButtons } from "./onClickControlButtons.js";
-import { handleLightMode } from "./handleLightMode.js";
-import { handleLanguageMenu } from "./lang";
-import { onClickSubmitLoader } from "./onClickSubmitLoader.js";
+import { ArrowUp, Chrome, createIcons, Github, Linkedin, Menu, Twitter, X, Youtube } from 'lucide';
+import { handleHeaderNavMenu } from "./header";
+import { handleScroll } from './scroll';
+import { submitFormOnClick } from './submitFormOnClick';
 
-onClickControlButtons();
-handleLightMode();
-handleLanguageMenu();
-onClickSubmitLoader();
+createIcons({ icons: { Menu, X, Github, Linkedin, Twitter, Chrome, Youtube, ArrowUp }});
+
+handleHeaderNavMenu();
+submitFormOnClick();
+handleScroll();

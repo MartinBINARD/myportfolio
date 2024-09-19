@@ -1,84 +1,111 @@
-.header-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  min-height: 100vh;
-  .left-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    .image {
-      border-radius: var(--br-sm-2);
-      height: 27rem;
-      margin-bottom: 3rem;
-      background-color: var(--color-black);
-      transition: all var(--time-transition) cubic-bezier(0.5, 0, 0, 1);
-      border-radius: 53% 47% 18% 82% / 46% 26% 74% 54%;
-      .my-face {
-        border-radius: 53% 47% 18% 82% / 46% 26% 74% 54%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: all var(--time-transition) cubic-bezier(0.5, 0, 0, 1);
-        filter: grayscale(100%);
-        &:hover {
-          filter: grayscale(0);
-        }
-      }
-    }
-    .image:hover,
-    .my-face:hover {
-      border-radius: 72% 28% 79% 21% / 41% 46% 54% 59%;
-    }
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--container-color);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    color:  var(--title-color);
+    font-weight: var(--font-medium);
   }
-  .right-header {
+  &__logo span {
+    color: var(--first-color);
+  }
+  &__toggle, &__close {
+    display: flex;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+// Navigation for mobile devices
+  &__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-right: 18rem;
-    .name {
-      display: flex;
-      flex-direction: column;
-      .dynamic-text {
-        position: relative;
-        top: 0;
-        color: var(--color-secondary);
-        width: max-content;
-        &::before,
-        &::after {
-          position: absolute;
-          content: "";
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-        }
-        &::before {
-          background-color: var(--color-primary);
-          animation: typing 1s 0.5s steps(14) forwards;
-        }
-        &::after {
-          width: 4px;
-          background-color: var(--color-secondary);
-          animation: typing 1s 0.5s steps(14) forwards,
-            blink 750ms steps(14) infinite;
-        }
-      }
-      @keyframes typing {
-        to {
-          left: 100%;
-        }
-      }
-      @keyframes blink {
-        to {
-          background: transparent;
-        }
-      }
+    row-gap: 3rem;
+  }
+  &__link {
+    position: relative;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: color var(--time-transition);
+    padding-bottom: 15px;
+    &::before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      border-bottom: 2px solid;
+      color: var(--first-color);
+      background-color: var(--first-color);
+      transition: all var(--time-transition) ease;
+      opacity: 0;
     }
-    p {
-      margin: 1.5rem 0;
-      line-height: 2rem;
-      font-size: 1.4rem;
+    &:hover {
+      color: var(--first-color);
+      &::before {
+        opacity: 1;
+        width: 100%;
+      }
     }
   }
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+}
+
+// Navigation for mobile devices
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 10%, .3);
+    width: 75%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); // For safari
+    transition: right var(--time-transition);
+  }
+}
+
+// Show menu
+
+.show-menu {
+  right: 0;
+}
+
+// Add blur to header
+
+.blur-header {
+  background-color: transparent;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 10%, .3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.active-link {
+  color: var(--first-color);
 }

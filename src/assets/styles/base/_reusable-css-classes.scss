@@ -1,0 +1,95 @@
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.section__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.section__subtitle span {
+  color: var(--first-color);
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+.button {
+  color: var(--title-color);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.button--active:active,
+.button--outlined:hover,
+.button--outlined:focus {
+  color: var(--body-color);
+  background-color: var(--first-color);
+}
+
+.button--outlined {
+  transition: all var(--time-transition) ease;
+  background-color : transparent;
+  border: 3px solid var(--first-color);
+  font-weight: var(--font-medium);
+  font-size: var(--h3-font-size);
+  outline: none;
+}
+
+.button--filled {
+  background-color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: box-shadow var(--time-transition);
+  &:hover,
+  &:focus {
+    box-shadow:  0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+  }
+}
+
+.social__button {
+  display: inline-flex;
+  background: transparent;
+  border-radius: .5rem;
+  color: var(--title-color);
+  border: 2px solid var(--first-color);
+  padding: .75rem;
+  transition: transform var(--time-transition);
+  .lucide-github,
+  .lucide-linkedin,
+  .lucide-twitter {
+    width: 25px;
+    height: auto;
+  }
+  &:hover {
+    background-color: var(--first-color);
+    color: initial;
+    transform: translateY(-.25rem);
+  }
+}

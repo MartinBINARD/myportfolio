@@ -1,15 +1,18 @@
 // BASE
-@use "base/reset.scss";
 @use "base/typography";
-// UTILS
-@use "utils/variables";
+@use "base/variables";
+@use "base/responsive-typography";
+@use "base/reset";
+@use "base/reusable-css-classes";
 // LAYOUT
-@use "layout/controls";
-@use "layout/action-btn";
 @use "layout/header";
-@use "layout/sections";
+@use "layout/home";
 @use "layout/about";
-@use "layout/portfolio";
+@use "layout/skills";
+@use "layout/projects";
 @use "layout/contact";
-
+@use "layout/footer";
+// UTILS
+@use "utils/scrollbar";
+@use "utils/scrollup";
 @use "utils/media-size";
