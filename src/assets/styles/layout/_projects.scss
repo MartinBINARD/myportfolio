@@ -27,14 +27,15 @@
     width: 100%;
   }
   &__button {
-    position: absolute;
-    right: 1rem;
+    align-items: center;
     bottom: -1.5rem;
-    padding: 1rem;
+    color: var(--body-color);
+    column-gap: .5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    column-gap: .5rem;
+    padding: 1rem;
+    position: absolute;
+    right: 1rem;
     transition: transform var(--time-transition);
     &:hover, &:focus {
       transform: translateY(-.35rem);
