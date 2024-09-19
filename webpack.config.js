@@ -53,10 +53,7 @@ module.exports = {
         "https://fonts.googleapis.com",
         "'unsafe-inline'",
       ],
-      "form-action": [
-        "'self'",
-        "https://formsubmit.co/7f395459300d1d5c76dd81de23eeab58",
-      ],
+      "form-action": "'self'",
       "img-src": ["'self'", "http://www.w3.org/2000/svg"],
     }),
     new Dotenv({
