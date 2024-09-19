@@ -47,7 +47,7 @@
       border-bottom: 2px solid;
       color: var(--first-color);
       background-color: var(--first-color);
-      transition: all var(--time-transition);
+      transition: all var(--time-transition) ease;
       opacity: 0;
     }
     &:hover {
