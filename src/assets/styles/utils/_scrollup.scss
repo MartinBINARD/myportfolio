@@ -1,17 +1,18 @@
 .scrollup {
+  background-color: var(--first-color);
+  border-radius: .4rem;
+  bottom: -50%;
+  color: var(--title-color);
+  display: inline-flex;
+  font-size: 1.25rem;
+  opacity: .8;
+  padding: 6px;
   position: fixed;
   right: 1rem;
-  bottom: -50%;
-  background-color: var(--body-color);
-  padding: 6px;
-  display: inline-flex;
-  border-radius: .25rem;
-  color: var(--first-color);
-  font-size: 1.25rem;
-  box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
   z-index: var(--z--tooltip);
   transition: bottom var(--time-transition), transform var(--time-transition);
   &:hover {
+    box-shadow:  0 8px 24px hsla(var(--hue), 100%, 40%, .25);
     transform: translateY(-.25rem);
   }
 }
