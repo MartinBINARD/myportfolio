@@ -35,6 +35,6 @@
   &__blob {
     width: 320px;
     fill: var(--first-color);
-    filter: drop-shadow(0 24px 24px hsla(var(--hue), 100%, 40%, .5));
+    filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
   }
 }
