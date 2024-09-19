@@ -9,7 +9,6 @@
 ## Description
 
 - This is a portfolio made with vanilla JS, Babel & webpack that uses the KISS principle :raised_hands:.
-- No subdomain for french content and english content is already set in HTML for SEO. This is why english content is not loaded by default.
 
 ## License
 
