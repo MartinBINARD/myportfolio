@@ -32,11 +32,30 @@
     row-gap: 3rem;
   }
   &__link {
+    position: relative;
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: color var(--time-transition);
-    &:hover{
+    padding-bottom: 15px;
+    &::before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      border-bottom: 2px solid;
       color: var(--first-color);
+      background-color: var(--first-color);
+      transition: all var(--time-transition);
+      opacity: 0;
+    }
+    &:hover {
+      color: var(--first-color);
+      &::before {
+        opacity: 1;
+        width: 100%;
+      }
     }
   }
   &__close {
