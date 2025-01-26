@@ -12,8 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.26.4",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
     "babel-loader": "^9.2.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^12.0.2",
@@ -34,7 +34,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "csp-html-webpack-plugin": "^5.1.0",
-    "lucide": "^0.473.0",
+    "lucide": "^0.474.0",
     "scrollreveal": "^4.0.9"
   }
 }
