@@ -19,7 +19,7 @@
     "copy-webpack-plugin": "^13.0.0",
     "core-js": "^3.41.0",
     "css-loader": "^7.1.2",
-    "css-minimizer-webpack-plugin": "^7.0.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "dotenv-webpack": "^8.1.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
@@ -34,7 +34,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "csp-html-webpack-plugin": "^5.1.0",
-    "lucide": "^0.477.0",
+    "lucide": "^0.479.0",
     "scrollreveal": "^4.0.9"
   }
 }
