@@ -28,7 +28,8 @@
 
   .home__container,
   .about__container,
-  .skills__container {
+  .skills__container,
+  .portfolio__content {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -51,6 +52,15 @@
 
   .about__data {
     order: 1;
+  }
+
+  .portfolio {
+    &__img {
+      width: 320px;
+    }
+    &__content {
+      align-items: center;
+    }
   }
 }
 
@@ -78,6 +88,28 @@
     .blur-header::after {
       backdrop-filter: blur(25px);
       -webkit-backdrop-filter: blur(25px);  // For safari
+    }
+  }
+  .portfolio {
+    &__content {
+      column-gap: 5rem;
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      .swiper-button-prev {
+        left: -3.5rem;
+      }
+      .swiper-button-next {
+        right: -3.5rem;
+      }
+      .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: -4.5rem;
+      }
+    }
+    &__img {
+      width: auto;
     }
   }
 }
@@ -134,10 +166,8 @@
       font-size: var(--h3-font-size);
     }
   }
-  .projects__container {
-      // grid-template-columns: repeat(3, 350px);
-      row-gap: 3rem;
-      padding-block: 2.5rem 4rem;
+  .portfolio__container {
+      padding: 2.5rem 4rem;
   }
   .contact {
     &__container {

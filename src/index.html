@@ -224,48 +224,72 @@
       </div>
     </section>
 
-    <section class="projects section" id="projects">
-      <div class="projects__container container grid">
-        <h3 class="section__subtitle">
-          Mon <span>Projet</span>
-        </h3>
+    <!-- PORTFOLIO -->
+    <section class="portfolio section">
+      <h3 class="section__subtitle">
+        Mes <span>Projets</span>
+      </h3>
 
-        <h2 class="section__title">
-          Projet Récent
-        </h2>
+      <h2 class="section__title">
+        Portfolio
+      </h2>
 
-        <article class="projects__card" tabindex="0">
-          <div class="projects__image">
-            <img src="assets/img/geocachetrek.webp" alt="projet GéoCacheTrek" class="projects__img">
+      <div class="portfolio__container grid container swiper">
+        <div class="swiper-wrapper">
+          <!-- PROJECT 1 -->
+          <article class="portfolio__content grid swiper-slide" tabindex="0">
+            <img src="assets/img/gregorybessonartshop.webp" alt="Gregory Besson Artshop" class="portfolio__img">
 
-            <a href="https://geocachetrek.online/" class="button button--filled projects__button" target="_blank"
-              tabindex="0">
-              Visiter<i data-lucide="chrome" />
-            </a>
-          </div>
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Gregory Besson Artshop</h3>
+              <h2 class="portfolio__subtitle">Site web</h2>
+              <p class="portfolio__description">Site e-commerce de vente d'art en ligne où l'inspiration parisienne
+                prend vie sous vos yeux. Une collection unique d'œuvres d'art originales, créées avec passion par un
+                artiste talentueux basé au cœur de Paris.</p>
+              <a href="https://gregorybessonartshop.com/" class="button button--filled portfolio__button"
+                target="_blank" tabindex="0">Visiter<i data-lucide="chrome" /></a>
+            </div>
+          </article>
 
-          <div class="projects__content">
-            <h3 class="projects__subtitle">Site web</h3>
-            <h2 class="projects__title">GeoCacheTrek</h2>
+          <!-- PROJECT 2 -->
+          <article class="portfolio__content grid swiper-slide" tabindex="0">
+            <img src="assets/img/geocachetrek.webp" alt="GéoCacheTrek" class="portfolio__img">
 
-            <p class="projects__description">
-              Application web de jeu de géocachettes ludique possédant une clean architecture et des tests
-            </p>
-          </div>
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">GeoCacheTrek</h3>
+              <h2 class="portfolio__subtitle">Site web</h2>
+              <p class="portfolio__description">Application web de jeu de géocachettes ludique possédant une clean
+                architecture et des tests</p>
+              <a href="https://geocachetrek.online/" class="button button--filled portfolio__button" target="_blank"
+                tabindex="0">Visiter<i data-lucide="chrome" /></a>
 
-          <div class="projects__buttons">
-            <a href="https://www.youtube.com/watch?v=1bu4YDkArFo" class="projects__link" target="_blank" tabindex="0">
-              Voir la vidéo <i data-lucide="youtube" />
-            </a>
+              <div class="portfolio__links">
+                <a href="https://www.youtube.com/watch?v=1bu4YDkArFo" class="portfolio__link" target="_blank"
+                  tabindex="0">
+                  Voir la vidéo <i data-lucide="youtube" />
+                </a>
 
-            <a href="https://github.com/MartinBINARD/geocaching-front" class="projects__link" target="_blank"
-              tabindex="0">
-              Voir le dépôt <i data-lucide="github" />
-            </a>
-          </div>
-        </article>
+                <a href="https://github.com/MartinBINARD/geocaching-front" class="portfolio__link" target="_blank"
+                  tabindex="0">
+                  Voir le dépôt <i data-lucide="github" />
+                </a>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- Arrows buttons -->
+        <div class="swiper-button-prev" tabindex="0">
+          <i data-lucide="chevron-left"></i>
+        </div>
+        <div class="swiper-button-next" tabindex="0">
+          <i data-lucide="chevron-right"></i>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination" />
       </div>
-
     </section>
 
     <section class="contact section" id="contact">

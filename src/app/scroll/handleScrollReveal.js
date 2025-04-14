@@ -12,5 +12,5 @@ export const handleScrollReveal = () => {
   scroll.reveal(`.home__image`, {origin: 'bottom'});
   scroll.reveal(`.about__data, .skills__data`, {origin: 'left'});
   scroll.reveal(`.about__image, .skills__content`, {origin: 'right'});
-  scroll.reveal(`.projects__card`, {interval: 100});
+  scroll.reveal(`.portfolio__container`, {interval: 100});
 };
