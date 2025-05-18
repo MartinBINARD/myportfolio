@@ -25,7 +25,7 @@
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "regenerator-runtime": "^0.14.1",
-    "sass": "^1.88.0",
+    "sass": "^1.89.0",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.8",
@@ -35,7 +35,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "csp-html-webpack-plugin": "^5.1.0",
-    "lucide": "^0.509.0",
+    "lucide": "^0.511.0",
     "scrollreveal": "^4.0.9",
     "swiper": "^11.2.6"
   }
