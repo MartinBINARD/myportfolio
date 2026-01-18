@@ -11,9 +11,9 @@
   "author": "Martin Binard",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
     "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "compression-webpack-plugin": "^11.1.0",
@@ -22,15 +22,15 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.4",
     "dotenv-webpack": "^8.1.1",
-    "html-webpack-plugin": "^5.6.5",
-    "mini-css-extract-plugin": "^2.9.4",
+    "html-webpack-plugin": "^5.6.6",
+    "mini-css-extract-plugin": "^2.10.0",
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.97.2",
     "sass-loader": "^16.0.6",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
