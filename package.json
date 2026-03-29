@@ -23,7 +23,7 @@
     "css-minimizer-webpack-plugin": "^8.0.0",
     "dotenv-webpack": "^9.0.0",
     "html-webpack-plugin": "^5.6.6",
-    "mini-css-extract-plugin": "^2.10.1",
+    "mini-css-extract-plugin": "^2.10.2",
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.98.0",
     "sass-loader": "^16.0.7",
@@ -35,8 +35,8 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "csp-html-webpack-plugin": "^5.1.0",
-    "lucide": "^0.577.0",
+    "lucide": "^1.7.0",
     "scrollreveal": "^4.0.9",
-    "swiper": "^12.1.2"
+    "swiper": "^12.1.3"
   }
 }
