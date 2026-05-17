@@ -30,12 +30,12 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.106.2",
     "webpack-cli": "^7.0.2",
-    "webpack-dev-server": "^5.2.3"
+    "webpack-dev-server": "^5.2.4"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "csp-html-webpack-plugin": "^5.1.0",
-    "lucide": "^1.14.0",
+    "lucide": "^1.16.0",
     "scrollreveal": "^4.0.9",
     "swiper": "^12.1.4"
   }
